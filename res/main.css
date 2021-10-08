@@ -1,0 +1,396 @@
+body {
+	margin: 0;
+}
+
+img.background {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	filter: brightness(15%);
+	z-index: -2;
+}
+
+img.background {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: -1;
+}
+
+canvas.background {
+	width: 100%;
+	height: 100%;
+
+	/* Error message */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 100;
+	font-size: 3em;
+	text-align: center;
+	background-color: #00000087;
+	color: #8e0000;
+}
+
+div.container {
+	display: flex;
+	flex-direction: column;
+	padding: 1em;
+	font-family: 'Montserrat', sans-serif;
+	color: #fafafa;
+}
+
+div.container div.title-container {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 1em;
+	user-select: none;
+}
+
+div.container div.title-container div.title {
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+
+div.container div.title-container div.title span.username {
+	font-weight: 200;
+	font-size: 5em;
+	filter:
+		drop-shadow(0 0 3px #0059FF40)
+		drop-shadow(0 0 5px #0059FF40)
+		drop-shadow(0 0 7px #0059FF40)
+		drop-shadow(0 0 10px #0059FF40)
+		drop-shadow(0 0 10px #0059FF40)
+		drop-shadow(0 0 10px #0059FF40)
+		drop-shadow(0 0 15px #0059FF40)
+		drop-shadow(0 0 200px #0059FF40);
+}
+
+img.avatar {
+	width: 5rem;
+	height: 5rem;
+	min-width: 5rem;
+	min-height: 5rem;
+	margin-right: 1em;
+	border-radius: 50%;
+	filter: drop-shadow(2px 2px 4px #00000050);
+}
+
+/***** Common *****/
+
+div.group {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0;
+	user-select: none;
+}
+
+div.group div.group_title {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	margin-top: 1em;
+	margin-bottom: 0;
+}
+
+div.group div.group_title span.group_name {
+	font-weight: 300;
+	font-size: 2em;
+	margin: 0;
+}
+
+/***** services *****/
+
+div.container div.services {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 1em;
+}
+
+div.services a.service {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 1.5em;
+	text-decoration: none;
+	color: inherit;
+}
+
+div.services a.service:visited {
+	color: inherit;
+}
+
+div.services a.service img.service_icon {
+	width: 8em;
+	height: 8em;
+	min-width: 8em;
+	min-height: 8em;
+	margin-bottom: 0.5em;
+	object-fit: cover;
+	filter: drop-shadow(2px 2px 3px #00000070);
+	user-select: none;
+}
+
+div.services a.service img.service_icon_round {
+	border-radius: 40%;
+}
+
+div.services a.service div.service_name {
+	display: flex;
+	align-items: center;
+}
+
+div.services a.service div.service_name img.service_name-icon {
+	width: 1.5em;
+	height: 1.5em;
+	min-width: 1.5em;
+	min-height: 1.5em;
+	margin-right: 0.5em;
+	border-radius: 4px;
+	object-fit: cover;
+	filter: drop-shadow(2px 2px 3px #00000070);
+	user-select: none;
+}
+
+div.services a.service div.service_name span.service_name_text {
+	font-weight: 300;
+	font-size: 1.3em;
+}
+
+div.services a.service span.service_username {
+	font-weight: 400;
+}
+
+div.services a.service {
+	transition-property: text-shadow;
+	transition: 200ms ease-in-out;
+}
+
+div.services a.service:hover {
+	filter:
+		drop-shadow(0 0 15px #0059FF40)
+		drop-shadow(0 0 15px #0059FF40)
+		drop-shadow(0 0 15px #0059FF40);
+}
+
+div.services a.service img.service_icon {
+	transition-property: filter;
+	transition: 200ms ease-in-out;
+}
+
+div.services a.service:hover img.service_icon {
+	filter:
+		drop-shadow(0 0 15px #0059FF40)
+		drop-shadow(0 0 15px #0059FF40)
+		drop-shadow(0 0 15px #0059FF40)
+		drop-shadow(0 0 15px #0059FF40)
+		drop-shadow(0 0 15px #0059FF40);
+}
+
+/***** Projects *****/
+
+div.container div.projects {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0;
+}
+
+div.projects a.project {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0;
+	text-decoration: none;
+	color: inherit;
+}
+
+div.projects a.project:visited {
+	color: inherit;
+}
+
+div.projects a.project img.project_header_icon {
+	width: 8em;
+	height: 8em;
+	min-width: 8em;
+	min-height: 8em;
+	margin-bottom: 0.5em;
+	margin-top: 0;
+	object-fit: cover;
+	filter: drop-shadow(2px 2px 3px #00000070);
+	user-select: none;
+}
+
+div.projects a.project img.project_header_icon_round {
+	border-radius: 50%;
+}
+
+div.projects a.project div.project_header {
+	display: flex;
+	align-items: center;
+}
+
+div.projects a.project div.project_header img.project_header_icon {
+	width: 5em;
+	height: 5em;
+	min-width: 5em;
+	min-height: 5em;
+	margin-top: 0;
+	margin-right: 0.5em;
+	border-radius: 4px;
+	object-fit: cover;
+	filter: drop-shadow(2px 2px 3px #00000070);
+
+	user-select: none;
+}
+
+div.projects a.project div.project_header span.project_header_name {
+	font-weight: 300;
+	font-size: 1.3em;
+	margin-left: 0.5em;
+}
+
+div.projects a.project {
+	transition-property: text-shadow;
+	transition: 200ms ease-in-out;
+}
+
+div.projects a.project:hover {
+	filter:
+		drop-shadow(0 0 10px #0059FF40)
+		drop-shadow(0 0 10px #0059FF40)
+		drop-shadow(0 0 10px #0059FF40)
+		drop-shadow(0 0 10px #0059FF40)
+		drop-shadow(0 0 10px #0059FF40);
+}
+
+div.projects a.project div.project_header img.project_header_icon {
+	transition-property: filter;
+	transition: 200ms ease-in-out;
+}
+
+div.projects a.project:hover div.project_header img.project_header_icon {
+	filter:
+		drop-shadow(0 0 10px #0059FF40)
+		drop-shadow(0 0 10px #0059FF40)
+		drop-shadow(0 0 10px #0059FF40);
+}
+
+/***** Avatars *****/
+
+div.container div.avatars {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 1.5em;
+}
+
+div.avatars a.avatar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 1.5em;
+	text-decoration: none;
+	color: inherit;
+}
+
+div.avatars a.avatar:visited {
+	color: inherit;
+}
+
+div.avatars a.avatar img.avatar-image {
+	width: 8em;
+	height: 8em;
+	min-width: 8em;
+	min-height: 8em;
+	margin-bottom: 0.5em;
+	object-fit: cover;
+	filter: drop-shadow(2px 2px 3px #00000070);
+
+	user-select: none;
+}
+
+div.avatars a.avatar img.avatar-image-round {
+	border-radius: 50%;
+}
+
+div.avatars a.avatar span.avatar-name {
+	font-weight: 300;
+	font-size: 1.3em;
+}
+
+div.avatars a.avatar {
+	transition-property: text-shadow;
+	transition: 150ms ease-in-out;
+}
+
+div.avatars a.avatar:hover {
+	filter:
+		drop-shadow(0 0 10px #0059FF40)
+		drop-shadow(0 0 10px #0059FF40)
+		drop-shadow(0 0 10px #0059FF40)
+		drop-shadow(0 0 10px #0059FF40)
+		drop-shadow(0 0 10px #0059FF40);
+}
+
+div.avatars a.avatar img.avatar-image {
+	transition-property: filter;
+	transition: 150ms ease-in-out;
+}
+
+div.avatars a.avatar:hover img.avatar-image {
+	filter:
+		drop-shadow(0 0 10px #0059FF40)
+		drop-shadow(0 0 10px #0059FF40)
+		drop-shadow(0 0 10px #0059FF40)
+		drop-shadow(0 0 10px #0059FF40)
+		drop-shadow(0 0 10px #0059FF40);
+}
+
+ div.footer {
+	width: 100%;
+	bottom: 0;
+	margin: 1em 0 0 0;
+	position: relative;
+	bottom: 0;
+	color: #CCCCCC;
+}
+
+div.footer span.footer-message {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 1em;
+	color: #ffffff;
+}
+
+h4 {
+	margin: 0;
+	text-align: center;
+}
+
+a {
+	padding-top: 2em;
+}
+
+a.project {
+	margin: 0;
+	padding: 0;
+}
+
+.service_name {
+	font-size: 0.85em;
+	color: #CCCCCC;
+}
+
+.service_username {
+	font-size: 1em;
+	color: #fff;
+	text-align: center;
+	margin-top: 0.5em;
+}
