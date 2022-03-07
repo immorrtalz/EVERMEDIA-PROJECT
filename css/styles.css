@@ -65,6 +65,11 @@ body, p {
 	padding-left: 1.25rem;
 }
 
+a.blue {
+	transition: all 0.2s;
+	margin-left: 0.5rem;
+}
+
 a.blue:hover {
 	filter:
 		drop-shadow(0 0 3px #006DD9)
@@ -214,6 +219,9 @@ a.white {
 }
 
 .btn-solid-lg {
+	backdrop-filter:
+		blur(5px)
+		brightness(75%);
 	display: inline-block;
 	padding: 1.375rem 2.625rem 1.375rem 2.625rem;
 	border-radius: 0.5rem;
@@ -1044,14 +1052,14 @@ select {
 /*************************/
 .basic-3 {
 	overflow: auto;
-	padding-top: 3.5rem;
-	padding-bottom: 7.25rem;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
 	background-color: #0F0F0F;
 	width: 100%;
 }
 
 .basic-3 .text-container {
-	margin-bottom: 5rem;
+	/*margin-bottom: 4rem;*/
 }
 
 .basic-3 h3 {
@@ -1228,7 +1236,7 @@ select {
 }
 
 .footer .list-unstyled .media-body {
-	margin-left: 0.625rem;
+	/*margin-left: 0.625rem;*/
 }
 
 .footer .fa-stack {
@@ -1237,12 +1245,16 @@ select {
 	font-size: 1.5rem;
 }
 
-.footer .fa-stack .fa-stack-1x {
+.footer .fa-stack-1x {
+	height: 50%;
+	width: 50%;
 	color: #262431;
 	transition: all 0.2s ease;
 }
 
 .footer .fa-stack .fa-stack-2x {
+	height: 100%;
+	width: 100%;
 	color: #EDEEF5;
 	transition: all 0.2s ease;
 }
@@ -1551,11 +1563,15 @@ a:hover.back-to-top {
 	}
 	
 	.navbar-custom .fa-stack-2x {
+		height: 100%;
+		width: 100%;
 		color: #008BFF;
 		transition: all 0.2s ease;
 	}
 	
 	.navbar-custom .fa-stack-1x {
+		height: 50%;
+		width: 50%;
 		color: #fff;
 		transition: all 0.2s ease;
 	}
@@ -1612,7 +1628,7 @@ a:hover.back-to-top {
 
 	/* Details 2 */
 	.basic-3 .text-container {
-		margin-top: 2.5rem;
+		/*margin-top: 2.5rem;*/
 	}
 	/* end of details 2 */
 
@@ -1734,8 +1750,9 @@ a:hover.back-to-top {
 	/* Details 2 */
 	.basic-3 .text-container {
 		margin-top: 4.5rem;
-		margin-right: 3.5rem;
-		margin-left: 2rem;
+		margin-right: 3rem;
+		margin-left: 3rem;
+		margin-bottom: 4rem;
 	}
 	/* end of details 2 */
 
@@ -1789,5 +1806,31 @@ a:hover.back-to-top {
 		padding: 0;
 	}
 	/* end of extra pages */
+
+	.basic-3 .row {
+		background-color: #1A1A20;
+		border-radius: 1rem;
+		padding-bottom: 0rem;
+		height: 100%;
+	}
+
+	.basic-3 .img-fluid {
+		border-radius: 1rem;
+		padding: 2rem;
+		position: absolute;
+		margin: auto;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		right: 0;
+	}
+
+	.fa-square {
+		padding: 1.5%;
+	}
+
+	.breadcrumbs .brcr {
+		margin: 0.5rem;
+	}
 }
 /* end of min-width width 1200px */
