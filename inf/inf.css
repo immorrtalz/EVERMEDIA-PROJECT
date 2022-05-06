@@ -50,6 +50,10 @@ header ul {
 }
 
 .nav-item {
+	display: inline;
+}
+
+.nav-item a {
 	padding: 0.5rem 1rem;
 	margin: 0.5rem;
 	display: inline;
@@ -57,21 +61,30 @@ header ul {
 	border-radius: 0.5rem;
 }
 
-.nav-item:hover {
+.nav-item a:hover {
 	background-color: #5C5D63;
 	cursor: pointer;
 }
 
-.nav-item:hover a {
+.nav-item a:hover {
 	color: #fff;
 }
 
-.current {
-	background-color: #5C5D6375;
+.vk-profile-header .nav-item {
+	padding: 0.5rem 1rem;
+	margin: 0.5rem;
+	background-color: #00000000;
+	border-radius: 0.5rem;
+}
+
+.vk-profile-header .nav-item:hover {
+	background-color: #5C5D63;
 	cursor: pointer;
 }
 
 .current a {
+	background-color: #5C5D6375;
+	cursor: pointer;
 	color: #fff;
 }
 
