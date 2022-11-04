@@ -1201,7 +1201,7 @@ footer .footer-2 .extra-link-icon:hover
 
 .docs-header {
 	height: 20rem;
-	background: linear-gradient(to bottom right, #0F0F0F, #008BFF);
+	background: linear-gradient(to bottom, #008BFF, #141419);
 	text-align: center;
 	display: flex;
 	flex-direction: column;
@@ -1220,12 +1220,23 @@ footer .footer-2 .extra-link-icon:hover
 	width: 50%;
 	color: #fff;
 	text-align: justify;
-	text-indent: 2rem;
+	/*text-indent: 2rem;*/
+	white-space: pre-wrap;
+}
+
+.docs-container p, ul, li {
+	margin: 0;
 }
 
 .docs-container ul {
 	text-indent: 0;
 	list-style-position: outside;
+}
+
+.docs-container h5 {
+	width: fit-content;
+	margin: 0 auto;
+	text-indent: 0;
 }
 
 /*end docs*/
