@@ -169,7 +169,7 @@ a {
 }
 
 .navbar .navpages .navpages-item:hover {
-	background-color: #5C5D63;
+	background-color: #C5C6CC50;
 	box-shadow: 0 0 1rem #00000020;
 	transform: scale(1.1);
 	will-change: transform;
@@ -1251,16 +1251,18 @@ footer .footer-2 .extra-link-icon:hover
 .btn-ripple {
 	/*position: relative;*/
 	overflow: hidden;
+	position: relative;
 }
 
 .btn-ripple .ripple {
 	position: absolute;
-	width: 100px;
-	height: 100px;
-	margin-top: -55px;
-	margin-left: -55px;
+	/*width: 100px;
+	height: 100px;*/
+	/*margin-top: -55px;
+	margin-left: -55px;*/
 	border-radius: 50%;
 	background-color: rgba(255, 255, 255, 0.5);
+	background-position: center;
 	animation: ripple 1.25s;
 	opacity: 0;
 	pointer-events: none;
