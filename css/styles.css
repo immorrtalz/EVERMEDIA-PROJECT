@@ -1251,7 +1251,6 @@ footer .footer-2 .extra-link-icon:hover
 .btn-ripple {
 	/*position: relative;*/
 	overflow: hidden;
-	position: relative;
 }
 
 .btn-ripple .ripple {
