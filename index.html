@@ -254,13 +254,13 @@
 		var y = event.pageY - btn.offset().top;
 
 		var elm = $("<span/>").appendTo(btn).css({
-			left: x,
-			top: y
+			left: x - 50 + "px",
+			top: y - 50 + "px"
 		}).addClass("ripple");
 		setTimeout(function()
-			{
-				elm.remove();
-			}, 3000);
+		{
+			elm.remove();
+		}, 3000);
 	});
 </script>
 <script src="js/slider.js"></script>
