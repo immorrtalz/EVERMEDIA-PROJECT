@@ -562,7 +562,7 @@ header .container-header .header-buttons {
 	align-items: flex-start;
 }
 
-header .container-header .btn-solid-fill {
+header .btn-solid-fill {
 	position: relative;
 	margin-right: 1rem;
 	display: block;
@@ -579,23 +579,35 @@ header .container-header .btn-solid-fill {
 	font: 700 0.85rem/0 "Montserrat", sans-serif;
 	text-decoration: none;
 	will-change: transform;
-	overflow: hidden;
+	overflow: visible;
 }
 
-header .container-header .btn-solid-fill:hover {
+header .btn-solid-fill:hover {
 	cursor: pointer;
-	border-radius: 0.75rem;
-	background-color: #008BFF;
+	border-radius: 0.65rem;
 	/*background: radial-gradient(ellipse at bottom, #33A2FF, #008BFF);*/
 	/*border: 0.15rem solid #008BFF00;*/
 	/*box-shadow: 0 0 2rem 0 #008BFF;*/
 	box-shadow: #008BFF 0px 1rem 50px -10px;
 	color: #fff;
-	transform: scale(1.1);
+	/*transform: scale(1.1);*/
 	will-change: transform;
 }
 
-header .container-header .btn-solid-fill .btn-border {
+header .btn-solid-fill:hover .btn-border{
+	border-radius: 0.65rem;
+	background-color: #008BFF;
+	/*background: radial-gradient(ellipse at bottom, #33A2FF, #008BFF);*/
+	/*border: 0.15rem solid #008BFF00;*/
+	/*box-shadow: 0 0 2rem 0 #008BFF;*/
+	box-shadow: inset 0 0 0 0.5rem #008BFF;
+	color: #fff;
+	transform: scale(1.1);
+	will-change: transform;
+	z-index: -1;
+}
+
+header .btn-solid-fill .btn-border {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -605,6 +617,7 @@ header .container-header .btn-solid-fill .btn-border {
 	padding: 0;
 	box-shadow: inset 0 0 0 0.125rem #008BFF;
 	border-radius: 0.5rem;
+	overflow: hidden;
 }
 
 footer {
@@ -1255,28 +1268,32 @@ footer .footer-2 .extra-link-icon:hover
 
 .btn-ripple .ripple {
 	position: absolute;
-	/*width: 100px;
-	height: 100px;*/
-	/*margin-top: -55px;
-	margin-left: -55px;*/
-	width: 100px;
-	height: 100px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 0;
+	height: 0;
 	border-radius: 50%;
 	background-color: rgba(255, 255, 255, 0.5);
 	background-position: center;
-	animation: ripple 1.25s;
+	animation: ripple 1s;
 	opacity: 0;
 	pointer-events: none;
 }
 
 @keyframes ripple {
-	from {
-		opacity: 1;
-		transform: scale(0);
-	}
-	to {
+	0% {
 		opacity: 0;
-		transform: scale(10);
+		/*transform: scale(0);*/
+	}
+	15% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		/*transform: scale(10);*/
+		width: 200%;
+		padding-bottom: 200%;
 	}
 }
 

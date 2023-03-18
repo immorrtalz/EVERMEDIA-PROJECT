@@ -13,9 +13,19 @@ document.addEventListener("mouseover", (e) => {
 	cursor.style.left = leftPosition + "px";
 	cursor.style.top = topPosition + "px";
 
-	const target = e.path[0]
-	if (target && target.tagName === 'A' || target.className.includes('btn-ripple') === true) {
+	const target = e.target
+	if (target.tagName === 'A' || target.className.includes('btn-ripple') === true)
+	{
 		cursor.classList.add('cursor-hover');
+
+		/*var elm = $("<span/>").appendTo(target).css({
+			position: "absolute",
+			top: 0,
+			left: 0,
+			width: 100 +"%",
+			height: 100 + "%",
+			background: "transparent",
+		});*/
 	}
 })
 document.addEventListener('mouseout', function(){
