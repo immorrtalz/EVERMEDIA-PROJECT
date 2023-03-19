@@ -140,7 +140,7 @@ a {
 	margin: 1rem 5% 1rem 0;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: end;
 	flex-wrap: wrap;
 	align-items: center;
 }
@@ -156,12 +156,13 @@ a {
 }
 
 .navpages .navpages-item {
+	position: relative;
 	display: inline;
+	margin: 0 0.5rem 0.5rem 0;
 	padding: 0.4rem 0.75rem;
 	background-color: transparent;
 	border-radius: 0.55rem;
 	cursor: pointer;
-	will-change: transform;
 }
 
 .navpages .navpages-current a {
@@ -171,8 +172,8 @@ a {
 .navbar .navpages .navpages-item:hover {
 	background-color: #C5C6CC50;
 	box-shadow: 0 0 1rem #00000020;
-	transform: scale(1.1);
-	will-change: transform;
+	margin: 0 0.25rem 0.5rem -0.25rem;
+	padding: 0.5rem 1rem;
 }
 
 .navbar .navpages .navpages-item:hover a {
@@ -295,7 +296,7 @@ header .container-header h1 {
 header .container-header .main-title::before {
 	width: 100%;
 	height: 100%;
-	content: 'EVEREST STUDIO\0aProject';
+	content: 'EVERMEDIA\0aPROJECT';
 	position: absolute;
 	top: 0;
 	color: #fff;
@@ -315,7 +316,7 @@ header .container-header .main-title::before {
 header .container-header .main-title::after {
 	width: 100%;
 	height: 100%;
-	content: 'EVEREST STUDIO\0aProject';
+	content: 'EVERMEDIA\0aPROJECT';
 	position: absolute;
 	top: 0;
 	color: #fff;
@@ -564,46 +565,36 @@ header .container-header .header-buttons {
 
 header .btn-solid-fill {
 	position: relative;
-	margin-right: 1rem;
 	display: block;
+	margin: 0 1rem 0 0;
 	padding: 1.25rem 2.25rem;
 	border-radius: 0.5rem;
 	background: none;
-	/*border: 0.15rem solid #008BFF;*/
 	box-sizing: border-box;
 	backdrop-filter: blur(10px);
-	/*box-shadow: inset 0 0 0 0.15rem #008BFF;*/
 	box-shadow: #008BFF00 0px 1rem 25px -10px;
 	color: #008BFF;
 	white-space: pre;
 	font: 700 0.85rem/0 "Montserrat", sans-serif;
 	text-decoration: none;
-	will-change: transform;
 	overflow: visible;
 }
 
 header .btn-solid-fill:hover {
 	cursor: pointer;
-	border-radius: 0.65rem;
-	/*background: radial-gradient(ellipse at bottom, #33A2FF, #008BFF);*/
-	/*border: 0.15rem solid #008BFF00;*/
-	/*box-shadow: 0 0 2rem 0 #008BFF;*/
+	margin: -0.1rem 0.5rem 0 -0.5rem;
+	padding: 1.35rem 2.75rem;
+	border-radius: 0.7rem;
+	background-color: #008BFF;
 	box-shadow: #008BFF 0px 1rem 50px -10px;
 	color: #fff;
-	/*transform: scale(1.1);*/
-	will-change: transform;
 }
 
 header .btn-solid-fill:hover .btn-border{
 	border-radius: 0.65rem;
 	background-color: #008BFF;
-	/*background: radial-gradient(ellipse at bottom, #33A2FF, #008BFF);*/
-	/*border: 0.15rem solid #008BFF00;*/
-	/*box-shadow: 0 0 2rem 0 #008BFF;*/
-	box-shadow: inset 0 0 0 0.5rem #008BFF;
+	box-shadow: inset 0 0 0 1rem #008BFF;
 	color: #fff;
-	transform: scale(1.1);
-	will-change: transform;
 	z-index: -1;
 }
 
@@ -617,6 +608,7 @@ header .btn-solid-fill .btn-border {
 	padding: 0;
 	box-shadow: inset 0 0 0 0.125rem #008BFF;
 	border-radius: 0.5rem;
+	pointer-events: none;
 	overflow: hidden;
 }
 
@@ -805,8 +797,16 @@ footer .footer-2 .extra-link-icon:hover
 	text-decoration: none;
 	background-color: #ffffff20;
 	box-shadow: 0 0 1rem #00000020;
-	transform: scale(1.25);
-	outline: 0;
+	width: 50px;
+	height: 50px;
+}
+
+.slider_control.prev:hover {
+	margin: -5px 0 0 -5px;
+}
+
+.slider_control.next:hover {
+	margin: -5px -5px 0 0;
 }
 
 .main-container-1 .container .items-block {
@@ -832,15 +832,14 @@ footer .footer-2 .extra-link-icon:hover
 	top: 0;
 	left: 0;
 	opacity: 0;
-	transform: scale(0.5);
 	z-index: 1;
 	pointer-events: none;
+	transform: scale(0.75);
 }
 
 .main-container-1 .container .items-block .slider-item.active {
 	position: relative;
 	opacity: 1;
-	transform: scale(1.0);
 	z-index: 2;
 }
 
@@ -848,6 +847,7 @@ footer .footer-2 .extra-link-icon:hover
 	height: 100%;
 	width: 100%;
 	margin: 0;
+	padding: 0;
 	border: 1px solid #323339;
 	border-radius: 1rem;
 	background-color: #1A1A2000;
@@ -855,7 +855,6 @@ footer .footer-2 .extra-link-icon:hover
 	box-sizing: border-box;
 	text-align: center;
 	display: block;
-	will-change: transform;
 	flex: 0 0 33.3333333333%;
 	pointer-events: all;
 	transition: all 0.3s;
@@ -868,8 +867,7 @@ footer .footer-2 .extra-link-icon:hover
 	text-align: center;
 	display: block;
 	cursor: pointer;
-	transform: scale(1.1);
-	will-change: transform;
+	padding: 1rem;
 }
 
 .main-container-1 .items-block .slider-item img {
@@ -880,6 +878,7 @@ footer .footer-2 .extra-link-icon:hover
 .main-container-1 .items-block .slider-item .item-text {
 	position: absolute;
 	bottom: 0;
+	left: 0;
 	width: 100%;
 	height: 2.5rem;
 	margin: 0;
@@ -894,7 +893,7 @@ footer .footer-2 .extra-link-icon:hover
 }
 
 .main-container-1 .slider-item:hover .item-text {
-	height: 3rem;
+	height: 5rem;
 	box-shadow: #008BFF 0px -1rem 50px -10px;
 }
 
@@ -985,7 +984,6 @@ footer .footer-2 .extra-link-icon:hover
 	text-align: center;
 	flex-basis: 40%;
 	overflow: hidden;
-	will-change: transform;
 	z-index: 2;
 }
 
@@ -993,8 +991,8 @@ footer .footer-2 .extra-link-icon:hover
 	box-shadow: 0 0 2rem #00000010;
 	background-size: 110% auto;
 	cursor: pointer;
-	transform: scale(1.05);
-	will-change: transform;
+	margin: -0.5rem 1rem -0.5rem -0.5rem;
+	padding: 0.5rem;
 }
 
 .games-container .game:hover .bg-image {
@@ -1115,13 +1113,13 @@ footer .footer-2 .extra-link-icon:hover
 	font-weight: 600;
 	/*white-space: pre;*/
 	pointer-events: all;
-	will-change: transform;
 }
 
 .games-container .text-block .info-element:hover {
-	transform: scale(1.1);
-	will-change: transform;
-	border-radius: 0.45rem;
+	/*transform: scale(1.1);*/
+	margin: -0.1rem 0.1rem 0.2rem -0.2rem;
+	padding: 0.2rem 0.5rem;
+	border-radius: 0.4rem;
 }
 
 /*main page*/
@@ -1161,6 +1159,7 @@ footer .footer-2 .extra-link-icon:hover
 }
 
 .main-container-2 a {
+	position: relative;
 	width: fit-content;
 	padding: 0.75rem 1rem;
 	border-radius: 0.75rem;
@@ -1170,14 +1169,13 @@ footer .footer-2 .extra-link-icon:hover
 	background-color: transparent;
 	border-radius: 0.75rem;*/
 	cursor: pointer;
-	will-change: transform;
 }
 
 .main-container-2 a:hover {
 	color: #fff;
 	background-color: #5C5D6350;
-	transform: scale(1.1);
-	will-change: transform;
+	margin: -0.25rem 0 -0.25rem 0;
+	padding: 1rem 1.75rem;
 }
 
 .blue {

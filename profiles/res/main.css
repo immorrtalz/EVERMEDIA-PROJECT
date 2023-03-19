@@ -1,22 +1,117 @@
 * {
 	transition: all 0.2s;
-	cursor: default;
+	cursor: none !important;
 	-moz-user-select: none;
 	-khtml-user-select: none;
 	-webkit-user-select: none;
 	user-select: none;
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
+	pointer-events: none;
 	font-family: 'Montserrat', sans-serif;
+}
+
+/*Scrollbar////////////////////////////*/
+/* width */
+::-webkit-scrollbar {
+	width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #EDEEF520;
+	border-radius: 7px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #EDEEF580;
+}
+
+.cursor {
+	position: fixed;
+	width: 10px;
+	height: 10px;
+	border-radius: 100%;
+	background-color: #ffffff;
+	box-shadow: 0 0 1rem 0 #ffffff;
+	opacity: 1;
+	left: 0;
+	transform: translate(-50%, -50%);
+	pointer-events: none;
+	z-index: 10000;
+	transition: width 0.2s, height 0.2s;
+}
+
+.cursor-click {
+	width: 20px;
+	height: 20px;
+}
+
+.cursor-hover {
+	width: 7px;
+	height: 7px;
+	opacity: 0.25;
+	mix-blend-mode: difference;
+	transition: opacity 0.2s;
+}
+
+.btn-ripple {
+	/*position: relative;*/
+	overflow: hidden;
+}
+
+.btn-ripple .ripple {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 0;
+	height: 0;
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, 0.5);
+	background-position: center;
+	animation: ripple 1s;
+	opacity: 0;
+	pointer-events: none;
+}
+
+@keyframes ripple {
+	0% {
+		opacity: 0;
+		/*transform: scale(0);*/
+	}
+	15% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		/*transform: scale(10);*/
+		width: 200%;
+		padding-bottom: 200%;
+	}
 }
 
 body, html {
 	margin: 0;
 }
 
+body {
+	overflow: overlay;
+}
+
 h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 	color: #fff;
+}
+
+a {
+	pointer-events: all;
 }
 
 .background {
@@ -244,18 +339,18 @@ h1, h2, h3, h4, h5, h6 {
 	backdrop-filter: blur(12px);
 	box-shadow: 0 0 3rem #00000010;
 	overflow: hidden;
-	will-change: transform;
+	/*will-change: transform;*/
 }
 
 .item:hover {
 	cursor: pointer;
 	color: #fff;
-	/*background-color: #47484E75;*/
+	background-color: #323339;
 	box-shadow: 0 0 3rem #00000020;
 	/*border: 1px solid #47484E00;*/
-	border: 1px solid #ffffff75;
+	border: 1px solid #323339;
 	transform: scale(1.05);
-	will-change: transform;
+	/*will-change: transform;*/
 }
 
 .item:hover .item-gradient {
@@ -264,7 +359,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .item:hover .item-icon {
 	transform: scale(1.25);
-	will-change: transform;
+	/*will-change: transform;*/
 }
 
 .item:hover .item-text {
@@ -369,7 +464,7 @@ h1, h2, h3, h4, h5, h6 {
 	backdrop-filter: blur(12px);
 	box-shadow: 0 0 3rem #00000010;
 	overflow: hidden;
-	will-change: transform;
+	/*will-change: transform;*/
 }
 
 .project:hover {
@@ -378,7 +473,7 @@ h1, h2, h3, h4, h5, h6 {
 	box-shadow: 0 0 3rem #00000020;
 	border: 1px solid #ffffff75;
 	transform: scale(1.05);
-	will-change: transform;
+	/*will-change: transform;*/
 }
 
 .project:hover .project-gradient {
@@ -387,7 +482,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .project:hover .project-icon {
 	transform: scale(1.05);
-	will-change: transform;
+	/*will-change: transform;*/
 }
 
 .project:hover .project-name {
@@ -433,11 +528,11 @@ h1, h2, h3, h4, h5, h6 {
 	filter: opacity(50%);
 }
 
-.everest-sp .project-gradient {
+.evermedia-project .project-gradient {
 	background: linear-gradient(to left, #C545FD60, #FF208710);
 }
 
-.everest-sp .project-icon {
+.evermedia-project .project-icon {
 	box-shadow: 0 0 2rem #C545FD75;
 }
 
