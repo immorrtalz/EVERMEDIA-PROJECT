@@ -1410,7 +1410,7 @@ a {
 	}
 
 	header .container-header .btn-solid-fill {
-		padding: calc(8px + 8 * (100vw / 1920) * 2.5) calc(8px + 8 * (100vw / 1920) * 5);
+		padding: calc(1.25rem * (100vw / 1920) * 2.5) calc(2.25rem * (100vw / 1920) * 5);
 		font-size: calc(8px + 8 * (100vw / 1920));
 	}
 
@@ -1422,6 +1422,10 @@ a {
 		padding: 1rem;
 		border-radius: 1rem;
 	}
+
+	.docs-container {
+		width: 70%;
+	}
 }
 
 @media (max-width: 960px) {
@@ -1432,6 +1436,16 @@ a {
 	.main-container-1 .items-block {
 		grid-gap: 1.25rem;
 		grid-template-rows: 14rem;
+	}
+
+	footer .footer-2 .flex-container {
+		height: calc(2.5rem * 2 + 1rem);
+	}
+
+	footer .footer-2 .flex-container a {
+		height: 2.5rem;
+		width: 2.5rem;
+		margin: 0 0.5rem 0.5rem 0;
 	}
 }
 
@@ -1498,6 +1512,20 @@ a {
 
 	.navbar .navpages-expanded .navpages-current a {
 		color: #fff;
+	}
+
+	.docs-container {
+		width: 90%;
+	}
+
+	footer .footer-2 .flex-container {
+		height: calc(2.25rem * 2 + 1rem);
+	}
+
+	footer .footer-2 .flex-container a {
+		height: 2.25rem;
+		width: 2.25rem;
+		margin: 0 0.5rem 0.5rem 0;
 	}
 }
 
@@ -1571,6 +1599,11 @@ a {
 }
 
 @media (max-width: 360px) {
+	header .container-header .btn-solid-fill {
+		padding: calc(1.25rem * (100vw / 1920) * 2.5) calc(2.25rem * (100vw / 1920) * 5);
+		font-size: calc(10px + 8 * (100vw / 1920));
+	}
+
 	.blue {
 		font: 600 0.85rem/1.25rem "Montserrat", sans-serif !important;
 	}
@@ -1606,13 +1639,12 @@ a {
 	}
 
 	footer .footer-2 .flex-container {
-		height: calc(2.5rem * 3 + 1rem);
+		height: calc(2rem * 2 + 1rem);
 	}
 
 	footer .footer-2 .flex-container a {
-		height: 2.5rem;
-		width: 2.5rem;
+		height: 2rem;
+		width: 2rem;
 		margin: 0 0.5rem 0.5rem 0;
-		display: block;
 	}
 }
