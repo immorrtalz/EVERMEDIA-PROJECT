@@ -662,14 +662,14 @@ header .container-header .header-buttons {
 	margin: 0 auto 0 0;
 	display: flex;
 	flex-direction: row;
-	flex-wrap: none;
+	flex-wrap: wrap;
 	align-items: flex-start;
 }
 
 header .btn-solid-fill {
 	position: relative;
 	display: block;
-	margin: 0 1rem 0 0;
+	margin: 0 1rem 1rem 0;
 	padding: 1.25rem 2.25rem;
 	border-radius: 0.5rem;
 	background: none;
@@ -1449,7 +1449,7 @@ a {
 		line-height: calc(10px + 10 * (100vw / 1920) * 2);
 	}
 
-	header .container-header .btn-solid-fill {
+	header .btn-solid-fill {
 		padding: calc(1.25rem * (100vw / 1920) * 2.5) calc(2.25rem * (100vw / 1920) * 5);
 		font-size: calc(8px + 8 * (100vw / 1920));
 	}
@@ -1636,11 +1636,19 @@ a {
 		width: 100%;
 		height: 10rem;
 	}
+
+	.games-container .game:hover {
+		box-shadow: 0 0 2rem #00000010;
+		background-size: 110% auto;
+		cursor: pointer;
+		margin: -0.5rem 1rem 0.5rem -0.5rem;
+		padding: 0.5rem;
+	}
 }
 
 @media (max-width: 360px) {
-	header .container-header .btn-solid-fill {
-		padding: calc(1.25rem * (100vw / 1920) * 2.5) calc(2.25rem * (100vw / 1920) * 5);
+	header .btn-solid-fill {
+		padding: calc(0.05rem * (100vw / 1920)) calc(0.05rem * (100vw / 1920));
 		font-size: calc(10px + 8 * (100vw / 1920));
 	}
 
