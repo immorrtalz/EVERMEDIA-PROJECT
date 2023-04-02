@@ -11,7 +11,7 @@ window.addEventListener("load", (event) => {
 
 	$("<h2>ССЫЛКИ</h2>").appendTo(footer2);
 	var elm = $('<div class="flex-container"></div>').appendTo(footer2);
-	$('<a class="extra-link-icon" href="https://www.youtube.com/c/@evermedia-project"><img src="images/socials/yt.png"></a>').appendTo(elm);
+	$('<a class="extra-link-icon" href="https://www.youtube.com/@evermedia-project"><img src="images/socials/yt.png"></a>').appendTo(elm);
 	$('<a class="extra-link-icon" href="https://discord.gg/GbzYVdF"><img src="images/socials/ds.png"></a>').appendTo(elm);
 	$('<a class="extra-link-icon" href="https://t.me/evermedia_project"><img src="images/socials/tg_channel.png"></a>').appendTo(elm);
 	$('<a class="extra-link-icon" href="https://t.me/evermedia_project_cm"><img src="images/socials/tg_chat.png"></a>').appendTo(elm);

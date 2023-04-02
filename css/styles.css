@@ -476,6 +476,46 @@ header .container-header .p404-title::after {
 	animation-direction: reverse-alternate;
 }
 
+header .container-header .trirun-title::before {
+	width: 100%;
+	height: 100%;
+	content: 'TriRun';
+	position: absolute;
+	top: 0;
+	color: #fff;
+	mix-blend-mode: lighten;
+	white-space: pre-line;
+	overflow: hidden;
+	left: -3px;
+	text-shadow: -2px 0 red;
+	animation-name: header-glitch-before;
+	animation-duration: 2s;
+	animation-timing-function: linear;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+	animation-direction: reverse-alternate;
+}
+
+header .container-header .trirun-title::after {
+	width: 100%;
+	height: 100%;
+	content: 'TriRun';
+	position: absolute;
+	top: 0;
+	color: #fff;
+	mix-blend-mode: lighten;
+	white-space: pre-line;
+	overflow: hidden;
+	left: 3px;
+	text-shadow: 2px 0 blue;
+	animation-name: header-glitch-after;
+	animation-duration: 2s;
+	animation-timing-function: linear;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+	animation-direction: reverse-alternate;
+}
+
 @keyframes header-glitch-before {
 	0% {
 		clip: rect(62px, 550px, 129px, 0px);
