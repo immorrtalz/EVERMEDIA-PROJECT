@@ -356,6 +356,10 @@ header .container-header h1 {
 	position: relative;
 }
 
+header .container-header .game-title {
+	margin: 0 auto 1rem auto;
+}
+
 header .container-header .main-title::before {
 	width: 100%;
 	height: 100%;
@@ -476,7 +480,7 @@ header .container-header .p404-title::after {
 	animation-direction: reverse-alternate;
 }
 
-header .container-header .trirun-title::before {
+header .container-header .game-title::before {
 	width: 100%;
 	height: 100%;
 	content: 'TriRun';
@@ -496,7 +500,7 @@ header .container-header .trirun-title::before {
 	animation-direction: reverse-alternate;
 }
 
-header .container-header .trirun-title::after {
+header .container-header .game-title::after {
 	width: 100%;
 	height: 100%;
 	content: 'TriRun';
@@ -657,6 +661,10 @@ header .container-header p {
 	position: relative;
 }
 
+header .container-header .game-description {
+	margin: 0 auto 1rem auto;
+}
+
 header .container-header .header-buttons {
 	width: fit-content;
 	margin: 0 auto 0 0;
@@ -664,6 +672,12 @@ header .container-header .header-buttons {
 	flex-direction: row;
 	flex-wrap: wrap;
 	align-items: flex-start;
+}
+
+header .container-header .header-buttons-game {
+	margin: 0 auto 0 auto;
+	align-items: center;
+	justify-content: center;
 }
 
 header .btn-solid-fill {
@@ -713,6 +727,14 @@ header .btn-solid-fill .btn-border {
 	border-radius: 0.5rem;
 	pointer-events: none;
 	overflow: hidden;
+}
+
+header .header-buttons-game .btn-solid-fill {
+	margin: 0 0.5rem 1rem 0.5rem;
+}
+
+header .header-buttons-game .btn-solid-fill:hover {
+	margin: -1rem 0 0 0;
 }
 
 footer {
