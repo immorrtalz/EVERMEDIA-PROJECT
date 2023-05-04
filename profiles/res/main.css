@@ -214,7 +214,7 @@ a {
 
 .title::before {
 	width: fit-content;
-	content: 'EVEREST';
+	content: 'immorrtalz';
 	position: absolute;
 	top: 0;
 	color: #fff;
@@ -232,7 +232,7 @@ a {
 
 .title::after {
 	width: fit-content;
-	content: 'EVEREST';
+	content: 'immorrtalz';
 	position: absolute;
 	top: 0;
 	color: #fff;
