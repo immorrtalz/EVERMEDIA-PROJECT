@@ -9,6 +9,7 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../css/general.css">
 	<link href="css/styles.css" rel="stylesheet">
 	<link rel="icon" href="images/favicon.png">
 </head>
@@ -29,15 +30,15 @@
 		<img src="images/logo.png" alt="EVERMEDIA PROJECT">
 
 		<div class="navpages">
-			<a href="https://evermedia-project.ru" class="navpages-item btn-ripple">
+			<a href="/" class="navpages-item btn-ripple">
 				<p>HOME</p>
 			</a>
 
-			<a href="https://evermedia-project.ru/games" class="navpages-item navpages-current btn-ripple">
+			<a href="" class="navpages-item navpages-current btn-ripple">
 				<p>GAMES</p>
 			</a>
 
-			<a href="https://evermedia-project.ru/profiles" class="navpages-item btn-ripple">
+			<a href="profiles" class="navpages-item btn-ripple">
 				<p>OWNER</p>
 			</a>
 		</div>
@@ -45,15 +46,15 @@
 		<button class="navpages-expander" id="navpages-expander" onclick="navpagesExpand()"></button>
 
 		<div class="navpages-expanded" id="navpages-expanded">
-			<a href="https://evermedia-project.ru" class="navpages-item btn-ripple">
+			<a href="/" class="navpages-item btn-ripple">
 				<p>HOME</p>
 			</a>
 
-			<a href="https://evermedia-project.ru/games" class="navpages-item navpages-current btn-ripple">
+			<a href="" class="navpages-item navpages-current btn-ripple">
 				<p>GAMES</p>
 			</a>
 
-			<a href="https://evermedia-project.ru/profiles" class="navpages-item btn-ripple">
+			<a href="profiles" class="navpages-item btn-ripple">
 				<p>OWNER</p>
 			</a>
 		</div>
@@ -64,7 +65,7 @@
 		<div class="container">
 			<div class="container-header">
 				<h1 class="games-title">Our<br>Games</h1>
-				<p>we. make. games.<br>BECAUSE. WE. LIKE IT.</p>
+				<p>we. make. games.<br><b>BECAUSE. WE. LIKE IT.</b></p>
 				<div class="header-buttons">
 					<a class="btn-solid-fill btn-ripple" href="https://evermedia-project.itch.io/" target="_blank"><span class="btn-border"></span>Itch.io page</a>
 					<a class="btn-solid-fill btn-ripple" href="https://gamejolt.com/@evermedia-project/games" target="_blank"><span class="btn-border"></span>GameJolt page</a>
@@ -74,6 +75,54 @@
 	</header>
 
 	<div class="main-container-1">
+
+		<div class="games-container" id="trirun">
+			<img src="images/main1_overlay.png" class="overlay"/>
+			<a href="https://trirun.evermedia-project.ru" class="game btn-ripple">
+				<img src="images/game2.png" class="bg-image"/>
+				<span class="gradient"></span>
+				<p>К игре<span class="material-icons">chevron_right</span></p>
+			</a>
+			<div class="text-block">
+				<h2>TriRun</h2>
+				<div class="info">
+					<p class="info-element">2023</p>
+					<p class="info-element">Раннер</p>
+					<p class="info-element" style="background-color: #3DDA84;
+					box-shadow: #3DDA84 0px 5px 25px -7px;">Android</p>
+					<p class="info-element" style="background-color: #21E79E;
+					box-shadow: #21E79E 0px 5px 25px -7px;">Release</p></div>
+				<p>Первая полноценная игра, вышедшая в релиз на четырёх площадках.
+					<br>
+					Это бесконечный раннер в космическом пространстве, где игроку нужно собирать монеты, уклоняясь от разных врагов. Монеты служат основной валютой, за которую можно купить усиливающие бонусы, новые корабли и аватарки для создания уникального профиля.
+				</p>
+			</div>
+		</div>
+
+		<div class="games-container" id="escapestage">
+			<img src="images/main1_overlay.png" class="overlay"/>
+			<a href="https://evermedia-project.itch.io/escape-stage" target="blank" class="game btn-ripple">
+				<img src="images/game3.png" class="bg-image"/>
+				<span class="gradient"></span>
+				<p>К игре<span class="material-icons">chevron_right</span></p>
+			</a>
+			<div class="text-block">
+				<h2>Escape Stage</h2>
+				<div class="info">
+					<p class="info-element">2022</p>
+					<p class="info-element">Sci-fi выживание-хоррор</p>
+					<p class="info-element" style="background-color: #55C5FC;
+					box-shadow: #55C5FC 0px 5px 25px -7px;">Windows</p>
+					<p class="info-element" style="background-color: #B5A3FF;
+					box-shadow: #B5A3FF 0px 5px 25px -7px;">Prototype</p>
+					<p class="info-element" style="background-color: #FF5656;
+					box-shadow: #FF5656 0px 5px 25px -7px;">Заброшена</p></div>
+				<p>Игра создавалась в рамках <a class="blue" href="https://itch.io/jam/my-first-game-jam-summer-2022">геймджема</a>.
+					<br>
+					Представляет из себя тёмную локацию, в которой игроку необходимо каждую стадию выполнять задания по поиску предметов. На последней стадии его ждёт серьёзная встреча...
+				</p>
+			</div>
+		</div>
 
 		<div class="games-container" id="truewaytovictory">
 			<img src="images/main1_overlay.png" class="overlay"/>
@@ -93,61 +142,11 @@
 					box-shadow: #FFB956 0px 5px 25px -7px;">Alpha</p>
 					<p class="info-element" style="background-color: #FF5656;
 					box-shadow: #FF5656 0px 5px 25px -7px;">Заброшена</p></div>
-				<p>Первая игра. Была создана исключительно как "проба пера".
+				<p>Первая игра. Была создана на основе одного YouTube-туториала как "проба пера".
 					<br>
 					Представляет из себя несколько уровней лабиринта-головоломки с уникальными препятствиями, преодолеть которые нужно за отведённое время.
 					<br>
-					На данный момент проект закрыт.
-				</p>
-			</div>
-		</div>
-
-		<div class="games-container" id="trirun">
-			<img src="images/main1_overlay.png" class="overlay"/>
-			<a href="https://trirun.evermedia-project.ru" class="game btn-ripple">
-				<img src="images/game2.png" class="bg-image"/>
-				<span class="gradient"></span>
-				<p>К игре<span class="material-icons">chevron_right</span></p>
-			</a>
-			<div class="text-block">
-				<h2>TriRun</h2>
-				<div class="info">
-					<p class="info-element">2023</p>
-					<p class="info-element">Раннер</p>
-					<p class="info-element" style="background-color: #3DDA84;
-					box-shadow: #3DDA84 0px 5px 25px -7px;">Android</p>
-					<p class="info-element" style="background-color: #56B2FF;
-					box-shadow: #56B2FF 0px 5px 25px -7px;">Beta</p>
-					<p class="info-element" style="background-color: #FF9C56;
-					box-shadow: #FF9C56 0px 5px 25px -7px;">В разработке</p></div>
-				<p>Первая полноценная игра, планируемая к релизу.
-					<br>
-					Это бесконечный раннер в космическом пространстве, где игроку нужно собирать монеты, уклоняясь от разных врагов. Монеты служат основной валютой, за которую можно купить усиливающие бонусы, новые корабли и аватарки профиля.
-				</p>
-			</div>
-		</div>
-
-		<div class="games-container" id="escapestage">
-			<img src="images/main1_overlay.png" class="overlay"/>
-			<a href="https://evermedia-project.itch.io/escape-stage" target="blank" class="game btn-ripple">
-				<img src="images/game3.png" class="bg-image"/>
-				<span class="gradient"></span>
-				<p>К игре<span class="material-icons">chevron_right</span></p>
-			</a>
-			<div class="text-block">
-				<h2>Escape Stage</h2>
-				<div class="info">
-					<p class="info-element">2022</p>
-					<p class="info-element">Sci-fi</p>
-					<p class="info-element" style="background-color: #1493DF;
-					box-shadow: #1493DF 0px 5px 25px -7px;">Windows</p>
-					<p class="info-element" style="background-color: #9F88FF;
-					box-shadow: #9F88FF 0px 5px 25px -7px;">Prototype</p>
-					<p class="info-element" style="background-color: #FF5656;
-					box-shadow: #FF5656 0px 5px 25px -7px;">Заброшена</p></div>
-				<p>Игра создавалась в рамках <a class="blue" href="https://itch.io/jam/my-first-game-jam-summer-2022">геймджема</a>.
-					<br>
-					Представляет из себя тёмную локацию, в которой игроку необходимо каждую стадию выполнять задания по поиску предметов. На последней стадии его ждёт серьёзная встреча...
+					Проект закрыт.
 				</p>
 			</div>
 		</div>
@@ -157,18 +156,17 @@
 		<div class="container">
 
 			<div class="in-container">
-				<h2>ХОЧЕШЬ В КОМАНДУ?</h2>
-				<p>Проект активно развивается, и помощь всегда будет полезна =)
-				<br>Если ты обладаешь хорошими навыками в области производства медиаконтента, имеешь немалое количество времени и готов предлагать свою помощь безвозмездно, пиши на почту:</p>
+				<h2>Сотрудничество</h2>
+				<p>Если хочешь сотрудничать с нами, пиши на почту:</p>
 				<a class="btn-ripple" href="mailto:evereststudioproject@bk.ru">evereststudioproject@bk.ru</a>
 			</div>
 
 			<div class="separator-line"></div>
 
 			<div class="in-container">
-				<h2>ОСНОВАТЕЛЬ ПРОЕКТА</h2>
-				<p>Здесь ты сможешь найти профили основателя проекта в различных соцсетях и не только:</p>
-				<a class="btn-ripple" href="https://evermedia-project.ru/profiles/index.html">ПРОФИЛИ</a>
+				<h2>Основатель проекта</h2>
+				<p>Здесь ты можешь найти официальные профили основателя проекта на разных платформах:</p>
+				<a class="btn-ripple" href="profiles">ПРОФИЛИ</a>
 			</div>
 
 		</div>

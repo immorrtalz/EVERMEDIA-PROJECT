@@ -19,7 +19,7 @@ window.addEventListener("load", (event) => {
 
 	var bottomstr1 = '<p>Copyright © EVERMEDIA PROJECT, 2019-';
 	var bottomstr2 = new Date().getFullYear();
-	var bottomstr3 = '. All rights reserved.</p><a href="mailto:evereststudioproject@bk.ru" class="blue"> evereststudioproject@bk.ru</a>';
+	var bottomstr3 = '. All rights reserved.</p><br><a href="mailto:evereststudioproject@bk.ru" class="blue">evereststudioproject@bk.ru</a>';
 	var bottomstr = bottomstr1 + bottomstr2 + bottomstr3;
 
 	$(bottomstr).appendTo(footer3);
