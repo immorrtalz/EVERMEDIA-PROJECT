@@ -135,7 +135,7 @@
 .scrolledNav
 {
 	box-shadow: 0 1rem 5rem 0 var(--clr-shadow-40);
-	background-color: var(--clr-white-transparent-20);
+	background-color: var(--clr-white-transparent-10);
 	backdrop-filter: blur(25px);
 }
 
