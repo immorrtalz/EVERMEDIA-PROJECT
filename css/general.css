@@ -11,6 +11,22 @@
 	--clr-white-transparent-60: #ffffff60;
 	--clr-shadow-20: #00000020;
 	--clr-shadow-40: #00000040;
+
+	--ft-size-h1: calc(36px + 24 * (100vw - 360px) / 1560);/* min txt size + difference to max size * (100vw - min site width (min @media size)) / max target site width minus min @media size */
+	--ft-size-h2: calc(32px + 21 * (100vw - 360px) / 1560);
+	--ft-size-h3: calc(28px + 17 * (100vw - 360px) / 1560);
+	--ft-size-h4: calc(24px + 14 * (100vw - 360px) / 1560);
+	--ft-size-h5: calc(20px + 11 * (100vw - 360px) / 1560);
+	--ft-size-h6: calc(16px + 8 * (100vw - 360px) / 1560);
+	--ft-size-p: calc(12px + 5 * (100vw - 360px) / 1560);
+
+	--mrg-h1: calc(0.5 * var(--ft-size-h1));
+	--mrg-h2: calc(0.5 * var(--ft-size-h2));
+	--mrg-h3: calc(0.5 * var(--ft-size-h3));
+	--mrg-h4: calc(0.5 * var(--ft-size-h4));
+	--mrg-h5: calc(0.5 * var(--ft-size-h5));
+	--mrg-h6: calc(0.5 * var(--ft-size-h6));
+	--mrg-p: calc(0.5 * var(--ft-size-p));
 }
 
 *

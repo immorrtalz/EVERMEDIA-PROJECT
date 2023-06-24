@@ -163,11 +163,13 @@ header
 .main-header
 {
 	background: url('../images/header-background.png') center center no-repeat;
+	background-size: cover;
 }
 
 .games-header
 {
 	background: url('../images/games-header-background.png') center center no-repeat;
+	background-size: cover;
 }
 
 .p404-temp
@@ -201,182 +203,68 @@ header .container-header h1
 	margin: 0 auto 1rem auto;
 	color: #fff;
 	white-space: pre-line;
-	font: 700 4rem/4rem "Exo 2", sans-serif;
 	font-style: italic;
 	position: relative;
 }
 
-header .container-header .game-title
-{
-	margin: 0 auto 1rem auto;
-}
-
-header .container-header .main-title::before
+header .container-header h1::before
 {
 	width: 100%;
 	height: 100%;
+	position: absolute;
+	top: 0;
+	color: red;
+	mix-blend-mode: lighten;
+	white-space: pre-line;
+	overflow: hidden;
+	left: -2px;
+	text-shadow: -2px 0 red;
+	animation-name: header-glitch-before;
+	animation-duration: 2s;
+	animation-timing-function: linear;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+	animation-direction: reverse-alternate;
+}
+
+header .container-header h1::after
+{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	color: var(--clr-accent);
+	mix-blend-mode: lighten;
+	white-space: pre-line;
+	overflow: hidden;
+	right: -3px;
+	text-shadow: -2px 0 var(--clr-accent);
+	animation-name: header-glitch-before;
+	animation-duration: 2s;
+	animation-timing-function: linear;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+	animation-direction: reverse-alternate;
+}
+
+header .container-header .main-title::before, header .container-header .main-title::after
+{
 	content: 'EVERMEDIA\0aPROJECT';
-	position: absolute;
-	top: 0;
-	color: #fff;
-	mix-blend-mode: lighten;
-	white-space: pre-line;
-	overflow: hidden;
-	left: -3px;
-	text-shadow: -2px 0 red;
-	animation-name: header-glitch-before;
-	animation-duration: 2s;
-	animation-timing-function: linear;
-	animation-delay: 0s;
-	animation-iteration-count: infinite;
-	animation-direction: reverse-alternate;
 }
 
-header .container-header .main-title::after
+header .container-header .games-title::before, header .container-header .games-title::after
 {
-	width: 100%;
-	height: 100%;
-	content: 'EVERMEDIA\0aPROJECT';
-	position: absolute;
-	top: 0;
-	color: #fff;
-	mix-blend-mode: lighten;
-	white-space: pre-line;
-	overflow: hidden;
-	left: 3px;
-	text-shadow: 2px 0 blue;
-	animation-name: header-glitch-after;
-	animation-duration: 2s;
-	animation-timing-function: linear;
-	animation-delay: 0s;
-	animation-iteration-count: infinite;
-	animation-direction: reverse-alternate;
-}
-
-header .container-header .games-title::before
-{
-	width: 100%;
-	height: 100%;
 	content: 'Our\0aGames';
-	position: absolute;
-	top: 0;
-	color: #fff;
-	mix-blend-mode: lighten;
-	white-space: pre-line;
-	overflow: hidden;
-	left: -3px;
-	text-shadow: -2px 0 red;
-	animation-name: header-glitch-before;
-	animation-duration: 2s;
-	animation-timing-function: linear;
-	animation-delay: 0s;
-	animation-iteration-count: infinite;
-	animation-direction: reverse-alternate;
 }
 
-header .container-header .games-title::after
+header .container-header .p404-title::before, header .container-header .p404-title::after
 {
-	width: 100%;
-	height: 100%;
-	content: 'Our\0aGames';
-	position: absolute;
-	top: 0;
-	color: #fff;
-	mix-blend-mode: lighten;
-	white-space: pre-line;
-	overflow: hidden;
-	left: 3px;
-	text-shadow: 2px 0 blue;
-	animation-name: header-glitch-after;
-	animation-duration: 2s;
-	animation-timing-function: linear;
-	animation-delay: 0s;
-	animation-iteration-count: infinite;
-	animation-direction: reverse-alternate;
-}
-
-header .container-header .p404-title::before
-{
-	width: 100%;
-	height: 100%;
 	content: '404\0aPAGE NOT FOUND';
-	position: absolute;
-	top: 0;
-	color: #fff;
-	mix-blend-mode: lighten;
-	white-space: pre-line;
-	overflow: hidden;
-	left: -3px;
-	text-shadow: -2px 0 red;
-	animation-name: header-glitch-before;
-	animation-duration: 2s;
-	animation-timing-function: linear;
-	animation-delay: 0s;
-	animation-iteration-count: infinite;
-	animation-direction: reverse-alternate;
 }
 
-header .container-header .p404-title::after
+header .container-header .game-title-trirun::before, header .container-header .game-title-trirun::after
 {
-	width: 100%;
-	height: 100%;
-	content: '404\0aPAGE NOT FOUND';
-	position: absolute;
-	top: 0;
-	color: #fff;
-	mix-blend-mode: lighten;
-	white-space: pre-line;
-	overflow: hidden;
-	left: 3px;
-	text-shadow: 2px 0 blue;
-	animation-name: header-glitch-after;
-	animation-duration: 2s;
-	animation-timing-function: linear;
-	animation-delay: 0s;
-	animation-iteration-count: infinite;
-	animation-direction: reverse-alternate;
-}
-
-header .container-header .game-title::before
-{
-	width: 100%;
-	height: 100%;
 	content: 'TriRun';
-	position: absolute;
-	top: 0;
-	color: #fff;
-	mix-blend-mode: lighten;
-	white-space: pre-line;
-	overflow: hidden;
-	left: -3px;
-	text-shadow: -2px 0 red;
-	animation-name: header-glitch-before;
-	animation-duration: 2s;
-	animation-timing-function: linear;
-	animation-delay: 0s;
-	animation-iteration-count: infinite;
-	animation-direction: reverse-alternate;
-}
-
-header .container-header .game-title::after
-{
-	width: 100%;
-	height: 100%;
-	content: 'TriRun';
-	position: absolute;
-	top: 0;
-	color: #fff;
-	mix-blend-mode: lighten;
-	white-space: pre-line;
-	overflow: hidden;
-	left: 3px;
-	text-shadow: 2px 0 blue;
-	animation-name: header-glitch-after;
-	animation-duration: 2s;
-	animation-timing-function: linear;
-	animation-delay: 0s;
-	animation-iteration-count: infinite;
-	animation-direction: reverse-alternate;
 }
 
 @keyframes header-glitch-before
@@ -557,10 +445,10 @@ header .container-header .game-title::after
 header .container-header p
 {
 	width: fit-content;
-	margin: 0 auto 1rem auto;
+	margin: 0 auto 4rem auto;
 	color: var(--clr-light);
 	white-space: pre-line;
-	font: 500 1.25rem/1.5rem "Exo 2", sans-serif;
+	font-weight: 500;
 	font-style: italic;
 	position: relative;
 }
@@ -979,7 +867,7 @@ footer .footer-2 .extra-link-icon:hover
 	margin-left: 1rem;
 }
 
-.main-container-1 .container .text-block *
+.text-block *
 {
 	z-index: 2;
 }
@@ -991,22 +879,13 @@ footer .footer-2 .extra-link-icon:hover
 	align-self: flex-end;
 }
 
-.main-container-1 .container .text-block h2
+.text-block h5
 {
-	margin: 0 0 1.5rem 0;
-	color: #fff;
 	font-style: italic;
-}
-
-.main-container-1 .container .text-block h5
-{
-	margin: 0 0 0.5rem 0;
-	color: #fff;
 }
 
 .main-container-1 .container .text-block p
 {
-	margin: 0 0 1rem 0;
 	color: var(--clr-light);
 }
 
@@ -1145,28 +1024,6 @@ footer .footer-2 .extra-link-icon:hover
 	flex-basis: 60%;
 }
 
-.games-container .text-block *
-{
-	z-index: 2;
-}
-
-.games-container .text-block h2
-{
-	margin: 0 0 1.5rem 0;
-	font-style: italic;
-}
-
-.games-container .text-block h5
-{
-	margin: 0 0 0.5rem 0;
-}
-
-.games-container .text-block p
-{
-	margin: 0 0 1rem 0;
-	color: var(--clr-light);
-}
-
 .games-container .text-block .info
 {
 	margin: 0 0 0.25rem 0;
@@ -1174,16 +1031,20 @@ footer .footer-2 .extra-link-icon:hover
 	flex-wrap: wrap;
 	align-items: flex-start;
 }
+
+.games-container .text-block p
+{
+	white-space: pre-wrap;
+}
+
 .games-container .text-block .info-element:nth-child(1)
 {
 	background-color: #fff;
-	box-shadow: #fff 0px 5px 25px -7px;
 }
 
 .games-container .text-block .info-element:nth-child(2)
 {
 	background-color: #fff;
-	box-shadow: #fff 0px 5px 25px -7px;
 }
 
 .games-container .text-block .info-element
@@ -1334,71 +1195,86 @@ footer .footer-2 .extra-link-icon:hover
 	text-align: right;
 	font-style: italic;
 }
-
 /*end docs*/
+
 h1
 {
 	color: #fff;
-	font: 700 2.25rem/2.25rem "Exo 2", sans-serif;
-	font-size: calc(18px + 18 * (100vw / 1920));
-	line-height: calc(20px + 20 * (100vw / 1920));
+	margin: 0 0 var(--mrg-h1) 0;
+	padding: 0;
+	font-weight: 700;
+	font-size: var(--ft-size-h1);
+	line-height: calc(var(--ft-size-h1) * 1.2);
 }
 
 h2
 {
 	color: #fff;
-	font: 700 2rem/2rem "Exo 2", sans-serif;
-	font-size: calc(16px + 16 * (100vw / 1920));
-	line-height: calc(18px + 18 * (100vw / 1920));
+	margin: 0 0 var(--mrg-h2) 0;
+	padding: 0;
+	font-weight: 700;
+	font-size: var(--ft-size-h2);
+	line-height: calc(var(--ft-size-h2) * 1.2);
 }
 
 h3
 {
 	color: #fff;
-	font: 700 1.75rem/1.75rem "Exo 2", sans-serif;
-	font-size: calc(14px + 14 * (100vw / 1920));
-	line-height: calc(16px + 160 * (100vw / 1920));
+	margin: 0 0 var(--mrg-h3) 0;
+	padding: 0;
+	font-weight: 700;
+	font-size: var(--ft-size-h3);
+	line-height: calc(var(--ft-size-h3) * 1.2);
 }
 
 h4
 {
 	color: #fff;
-	font: 700 1.5rem/1.5rem "Exo 2", sans-serif;
-	font-size: calc(12px + 12 * (100vw / 1920));
-	line-height: calc(14px + 14 * (100vw / 1920));
+	margin: 0 0 var(--mrg-h4) 0;
+	padding: 0;
+	font-weight: 700;
+	font-size: var(--ft-size-h4);
+	line-height: calc(var(--ft-size-h4) * 1.2);
 }
 
 h5
 {
 	color: #fff;
-	font: 700 1.25rem/1.25rem "Exo 2", sans-serif;
-	font-size: calc(10px + 10 * (100vw / 1920));
-	line-height: calc(12px + 12 * (100vw / 1920));
+	margin: 0 0 var(--mrg-h5) 0;
+	padding: 0;
+	font-weight: 700;
+	font-size: var(--ft-size-h5);
+	line-height: calc(var(--ft-size-h5) * 1.2);
 }
 
 h6
 {
 	color: #fff;
-	font: 700 1rem/1rem "Exo 2", sans-serif;
-	font-size: calc(8px + 8 * (100vw / 1920));
-	line-height: calc(10px + 10 * (100vw / 1920));
+	margin: 0 0 var(--mrg-h6) 0;
+	padding: 0;
+	font-weight: 700;
+	font-size: var(--ft-size-h6);
+	line-height: calc(var(--ft-size-h6) * 1.2);
 }
 
 p, ul, li
 {
 	color: #fff;
-	font: 400 1rem/1.5rem "Exo 2", sans-serif;
-	font-size: calc(8px + 8 * (100vw / 1920));
-	line-height: calc(10px + 10 * (100vw / 1920));
+	margin: 0 0 var(--mrg-p) 0;
+	padding: 0;
+	font-weight: 400;
+	font-size: var(--ft-size-p);
+	line-height: calc(var(--ft-size-p) * 1.4);
 }
 
 a
 {
 	text-decoration: none;
-	cursor: pointer;
-	font: 500 1rem/1.5rem "Exo 2", sans-serif;
-	font-size: calc(8px + 8 * (100vw / 1920));
-	line-height: calc(10px + 10 * (100vw / 1920));
+	margin: 0;
+	padding: 0;
+	font-weight: 500;
+	font-size: var(--ft-size-p);
+	line-height: calc(var(--ft-size-p) * 1.4);
 }
 
 @media (min-width: 768px)
@@ -1416,18 +1292,6 @@ a
 
 @media (max-width: 1024px)
 {
-	header .container-header h1
-	{
-		font-size: calc(18px + 18 * (100vw / 1920) * 4);
-		line-height: calc(20px + 20 * (100vw / 1920) * 4);
-	}
-
-	header .container-header p
-	{
-		font-size: calc(8px + 8 * (100vw / 1920) * 2);
-		line-height: calc(10px + 10 * (100vw / 1920) * 2);
-	}
-
 	header .btn-solid-fill
 	{
 		padding: calc(1.25rem * (100vw / 1920) * 2.5) calc(2.25rem * (100vw / 1920) * 5);
