@@ -546,7 +546,7 @@ footer
 	background-color: var(--clr-dark);
 }
 
-footer h2
+footer h4
 {
 	margin: 0 0 1rem 0;
 	font-style: italic;

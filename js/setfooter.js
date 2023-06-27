@@ -6,10 +6,10 @@ window.addEventListener("load", (event) => {
 	const footer2 = $('<div class="container-footer footer-2"></div>').appendTo(footercont);
 	const footer3 = $('<div class="container-footer footer-3"></div>').appendTo(footercont);
 
-	$("<h2>О НАС</h2>").appendTo(footer1);
+	$("<h4>О НАС</h4>").appendTo(footer1);
 	$("<p>EVERMEDIA PROJECT - медиапроект, специализирующийся в области разработки видеоигр, графического дизайна и иного мультимедиа контента</p>").appendTo(footer1);
 
-	$("<h2>ССЫЛКИ</h2>").appendTo(footer2);
+	$("<h4>ССЫЛКИ</h4>").appendTo(footer2);
 	var elm = $('<div class="flex-container"></div>').appendTo(footer2);
 	$('<a class="extra-link-icon" href="https://www.youtube.com/@evermedia-project"><img src="images/socials/yt.png"></a>').appendTo(elm);
 	$('<a class="extra-link-icon" href="https://discord.gg/GbzYVdF"><img src="images/socials/ds.png"></a>').appendTo(elm);
