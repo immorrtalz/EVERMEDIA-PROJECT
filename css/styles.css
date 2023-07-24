@@ -267,6 +267,11 @@ header .container-header .game-title-trirun::before, header .container-header .g
 	content: 'TriRun';
 }
 
+header .container-header .game-title-eternal-heart::before, header .container-header .game-title-eternal-heart::after
+{
+	content: 'Eternal Heart';
+}
+
 @keyframes header-glitch-before
 {
 	0%
