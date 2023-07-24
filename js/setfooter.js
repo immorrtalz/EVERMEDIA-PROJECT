@@ -11,11 +11,11 @@ window.addEventListener("load", (event) => {
 
 	$("<h4>ССЫЛКИ</h4>").appendTo(footer2);
 	var elm = $('<div class="flex-container"></div>').appendTo(footer2);
-	$('<a class="extra-link-icon" href="https://www.youtube.com/@evermedia-project"><img src="images/socials/yt.png"></a>').appendTo(elm);
-	$('<a class="extra-link-icon" href="https://discord.gg/GbzYVdF"><img src="images/socials/ds.png"></a>').appendTo(elm);
-	$('<a class="extra-link-icon" href="https://t.me/evermedia_project"><img src="images/socials/tg_channel.png"></a>').appendTo(elm);
-	$('<a class="extra-link-icon" href="https://t.me/evermedia_project_cm"><img src="images/socials/tg_chat.png"></a>').appendTo(elm);
-	$('<a class="extra-link-icon" href="https://vk.com/evermedia_project"><img src="images/socials/vk.png"></a>').appendTo(elm);
+	$('<a class="extra-link-icon" href="https://www.youtube.com/@evermedia-project"><img src="https://evermedia-project.ru/images/socials/yt.png"></a>').appendTo(elm);
+	$('<a class="extra-link-icon" href="https://discord.gg/GbzYVdF"><img src="https://evermedia-project.ru/images/socials/ds.png"></a>').appendTo(elm);
+	$('<a class="extra-link-icon" href="https://t.me/evermedia_project"><img src="https://evermedia-project.ru/images/socials/tg_channel.png"></a>').appendTo(elm);
+	$('<a class="extra-link-icon" href="https://t.me/evermedia_project_cm"><img src="https://evermedia-project.ru/images/socials/tg_chat.png"></a>').appendTo(elm);
+	$('<a class="extra-link-icon" href="https://vk.com/evermedia_project"><img src="https://evermedia-project.ru/images/socials/vk.png"></a>').appendTo(elm);
 
 	var bottomstr1 = '<p>Copyright © EVERMEDIA PROJECT, 2019-';
 	var bottomstr2 = new Date().getFullYear();
