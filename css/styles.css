@@ -485,7 +485,7 @@ header .btn-solid-fill
 	background: none;
 	box-sizing: border-box;
 	backdrop-filter: blur(10px);
-	box-shadow: transparent; 0px 1rem 25px -10px;
+	box-shadow: transparent 0px 1rem 25px -10px;
 	color: var(--clr-accent);
 	white-space: pre;
 	font: 700 0.85rem/0 "Exo 2", sans-serif;
@@ -644,7 +644,7 @@ footer .footer-3 .blue:hover
 
 footer .footer-2 .extra-link-icon
 {
-	box-shadow: transparent; 0px 1rem 25px -3px;
+	box-shadow: transparent 0px 1rem 25px -3px;
 }
 
 footer .footer-2 .extra-link-icon:nth-child(1):hover
@@ -795,7 +795,7 @@ footer .footer-2 .extra-link-icon:hover
 	padding: 0;
 	border: 1px solid var(--clr-white-transparent-20);
 	border-radius: 1rem;
-	background-color: #transparent;
+	background-color: transparent;
 	backdrop-filter: blur(10px);
 	box-sizing: border-box;
 	text-align: center;
@@ -835,7 +835,7 @@ footer .footer-2 .extra-link-icon:hover
 	flex-direction: row;
 	align-items: center;
 	background-color: var(--clr-accent);
-	box-shadow: transparent; 0px -1rem 25px -10px;
+	box-shadow: transparent 0px -1rem 25px -10px;
 	box-sizing: border-box;
 	text-align: center;
 }
