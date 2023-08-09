@@ -7,7 +7,7 @@ window.addEventListener("load", (event) => {
 	const footer3 = $('<div class="container-footer footer-3"></div>').appendTo(footercont);
 
 	$("<h4>О НАС</h4>").appendTo(footer1);
-	$("<p>EVERMEDIA PROJECT - медиапроект, специализирующийся в области разработки видеоигр, графического дизайна и иного мультимедиа контента</p>").appendTo(footer1);
+	$("<p>EVERMEDIA PROJECT - медиапроект, специализирующийся в таких областях, как разработка видеоигр, графический дизайн и создание иного мультимедиа контента</p>").appendTo(footer1);
 
 	$("<h4>ССЫЛКИ</h4>").appendTo(footer2);
 	var elm = $('<div class="flex-container"></div>').appendTo(footer2);
