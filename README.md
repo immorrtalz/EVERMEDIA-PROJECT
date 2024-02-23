@@ -1,8 +1,8 @@
 # EVERMEDIA PROJECT
 
-[![License](https://img.shields.io/badge/license-GPL%20v3-yellow?color=goldenrod)](https://github.com/immorrtalz/evermedia-project/blob/main/LICENSE)
+[![License](https://img.shields.io/badge/license-GPL%20v3-yellow?color=goldenrod)](https://github.com/immorrtalz/evermedia-project/blob/dev/LICENSE)
 [![pages-build-deployment](https://github.com/immorrtalz/evermedia-project/actions/workflows/pages/pages-build-deployment/badge.svg?branch=dev)](https://github.com/immorrtalz/evermedia-project/actions/workflows/pages/pages-build-deployment)
-[![CodeFactor](https://www.codefactor.io/repository/github/immorrtalz/evermedia-project/badge)](https://www.codefactor.io/repository/github/immorrtalz/evermedia-project)
+[![CodeFactor](https://www.codefactor.io/repository/github/immorrtalz/evermedia-project/badge/dev)](https://www.codefactor.io/repository/github/immorrtalz/evermedia-project[![CodeFactor](https://www.codefactor.io/repository/github/immorrtalz/evermedia-project/badge/dev)](https://www.codefactor.io/repository/github/immorrtalz/evermedia-project/overview/dev))
 [![Last commit](https://img.shields.io/github/last-commit/immorrtalz/evermedia-project?color=orange)]()
 [![Discord](https://img.shields.io/discord/600372807062519848?label=discord&color=slateblue)](https://discord.gg/GbzYVdF)
 
