@@ -7,8 +7,6 @@
 
 	<title>EVERMEDIA PROJECT</title>
 
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link href="./css/general.css" rel="stylesheet" type="text/css">
 	<link href="./css/styles.css" rel="stylesheet" type="text/css">
 	<link href="./images/favicon.png" rel="icon">
@@ -16,7 +14,8 @@
 
 <body>
 
-	<span class="noise-overlay"></span>
+	<div class="cursor"></div>
+	<div class="cursor-glow"></div>
 
 	<!-- <span class="loading-container">
 		<span class="anim-group">
@@ -26,13 +25,12 @@
 		</span>
 	</span> -->
 
-	<!-- <div class="cursor" id="cursor"></div> -->
+	<span class="noise-overlay"></span>
+
 	<div class="blobs">
 		<div class="blob1"></div>
 		<div class="blob2"></div>
 	</div>
-
-	<!-- <span class="panel top-header-pos"></span> -->
 
 	<div class="top-header center-x panel">
 
@@ -214,9 +212,12 @@
 	crossorigin="anonymous">
 </script>
 
+
+<script src="js/cursor.js"></script>
+<script src="js/texts.js"></script>
+
 <script src="js/loadingscreen.js"></script>
 <script src="js/main.js"></script>
-<script src="js/texts.js"></script>
 <script src="js/ripple.js"></script>
 <script src="js/slider.js"></script>
 <!-- <script src="js/cursor.js"></script> -->
