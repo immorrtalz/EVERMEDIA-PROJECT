@@ -7,68 +7,85 @@
 
 	<title>EVERMEDIA PROJECT</title>
 
-	<link href="https://fonts.googleapis.com/css?family=Exo+2:400,500,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link href="css/general.css" rel="stylesheet" type="text/css">
-	<link href="css/styles.css" rel="stylesheet" type="text/css">
-	<link rel="icon" href="images/favicon.png">
+	<link href="./css/general.css" rel="stylesheet" type="text/css">
+	<link href="./css/styles.css" rel="stylesheet" type="text/css">
+	<link href="./images/favicon.png" rel="icon">
 </head>
 
-<body class="body">
+<body>
 
-	<span class="loading-container">
+	<span class="noise-overlay"></span>
+
+	<!-- <span class="loading-container">
 		<span class="anim-group">
 			<span class="load-circle"></span>
 			<span class="load-circle"></span>
 			<span class="load-circle"></span>
 		</span>
-	</span>
+	</span> -->
 
-	<div class="cursor" id="cursor"></div>
+	<!-- <div class="cursor" id="cursor"></div> -->
+	<div class="blobs">
+		<div class="blob1"></div>
+		<div class="blob2"></div>
+	</div>
 
-	<nav class="navbar">
-		<!-- <div class="top-announcement" id="top-announcement">
-			<h6>Это уведомление вверху экрана</h6>
-			<button class="top-announcement-button btn-ripple" onclick="closeTopAnnouncement()">
-				<span class="material-icons">close</span>
-			</button>
-		</div> -->
+	<!-- <span class="panel top-header-pos"></span> -->
 
-		<img src="images/logo.png" alt="EVERMEDIA PROJECT">
+	<div class="top-header center-x panel">
 
-		<div class="navpages">
-			<a href="" class="navpages-item navpages-current btn-ripple">
-				<p>HOME</p>
-			</a>
+		<img class="top-header-logo" src="images/logo-sm.png" alt="EVERMEDIA PROJECT">
 
-			<a href="games" class="navpages-item btn-ripple">
-				<p>GAMES</p>
-			</a>
+		<a href="" class="top-header-link">Home</a>
+		<a href="./games" class="top-header-link">Games</a>
+		<a href="./profiles" class="top-header-link">Owner</a>
 
-			<a href="profiles" class="navpages-item btn-ripple">
-				<p>OWNER</p>
-			</a>
+	</div>
+
+	<div class="main-container">
+		<div class="header absolute center-xy">
+
+			<a class="header-tip" href="./profiles">by immorrtalz</a>
+
+			<h1 class="header-title gray-gradient">When 
+				<span class="header-title-changing-1">
+					<span>design</span>
+					<span>application</span>
+				</span>
+				<br>
+				is not just 
+				<span class="header-title-changing-2">
+					<span>pictures</span>
+					<span>code</span>
+				</span>
+			</h1>
+
+			<h6 class="header-text">Feel this world with us!</h6>
+
+			<a href="" class="button"><span class="button-blur"></span>Dive in</a>
+
 		</div>
 
-		<button class="navpages-expander" id="navpages-expander" onclick="navpagesExpand()"></button>
-
-		<div class="navpages-expanded" id="navpages-expanded">
-			<a href="" class="navpages-item navpages-current btn-ripple">
-				<p>HOME</p>
-			</a>
-
-			<a href="games" class="navpages-item btn-ripple">
-				<p>GAMES</p>
-			</a>
-
-			<a href="profiles" class="navpages-item btn-ripple">
-				<p>OWNER</p>
-			</a>
+		<div class="header-arrows absolute center-x">
+			<span><img class="header-arrow-1" src="./images/arrow.png"></span>
+			<span><img class="header-arrow-2" src="./images/arrow.png"></span>
+			<span><img class="header-arrow-3" src="./images/arrow.png"></span>
 		</div>
 
-	</nav>
+	</div>
 
-	<header class="main-header">
+	<div class="main-container">
+		<div class="content">
+
+			<h3 class="content-title gray-gradient">PROJECTS</h3>
+			<h6 class="content-text">Apps and games for PC and mobile</h6>
+
+		</div>
+	</div>
+
+	<!-- <div class="main-header">
 		<div class="container">
 			<div class="container-header">
 				<h1 class="main-title">EVERMEDIA<br>PROJECT</h1>
@@ -79,11 +96,11 @@
 				</div>
 			</div>
 		</div>
-	</header>
+	</div>
 
 	<div class="main-container-1">
 
-		<!-- <div class="container" style="text-align: right;" id="uslugi">
+		<div class="container" style="text-align: right;" id="uslugi">
 			<img src="images/main1_overlay.png" class="overlay"/>
 			<div class="items-block">
 
@@ -109,7 +126,7 @@
 				<a href="https://vk.com/uslugi-179006884" class="blue" target="blank">Подробнее</a>
 				<a href="uslugi-service-policy" class="blue" target="blank">Условия обслуживания - Услуги</a>
 			</div>
-		</div> -->
+		</div>
 
 		<div class="container" style="text-align: right;">
 			<img src="images/main1_overlay.png" class="overlay"/>
@@ -184,7 +201,7 @@
 			</div>
 
 		</div>
-	</div>
+	</div> -->
 
 	<footer>
 	</footer>
@@ -199,9 +216,10 @@
 
 <script src="js/loadingscreen.js"></script>
 <script src="js/main.js"></script>
+<script src="js/texts.js"></script>
 <script src="js/ripple.js"></script>
 <script src="js/slider.js"></script>
-<script src="js/cursor.js"></script>
-<script src="js/tilt.jquery.js"></script>
-<script src="js/setfooter.js"></script>
+<!-- <script src="js/cursor.js"></script> -->
+<!-- <script src="js/tilt.jquery.js"></script> -->
+<!-- <script src="js/setfooter.js"></script> -->
 </html>

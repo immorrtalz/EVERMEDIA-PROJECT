@@ -1,36 +1,47 @@
-window.addEventListener('load', function(event) {
-	navpagesUnExpand();
-});
-
-window.addEventListener('scroll', function () {
-	let nav = document.querySelector('nav');
-	let windowPosition = window.scrollY > 0;
-	nav.classList.toggle('scrolledNav', windowPosition);
-	if (window.scrollY == 0)
+/* window.addEventListener('scroll', () =>
 	{
-		navpagesUnExpand();
-	}
+		let topHeader = document.querySelector('.top-header');
+		let isScrolled = window.scrollY > 0;
+		topHeader.classList.toggle('top-header-scrolled', isScrolled);
+		if (window.scrollY == 0) navbarUnExpand();
+	}); */
+
+
+/*window.addEventListener('load', function(event)
+{
+	navbarUnExpand();
 });
 
-function navpagesExpand() {
-	let nav = document.querySelector('nav');
-	nav.classList.add('scrolledNav');
-	document.getElementById("navpages-expanded").style.height="fit-content";
-	document.getElementById("navpages-expander").setAttribute("onClick", "javascript: navpagesUnExpand();");
-	document.getElementById("navpages-expander").style.width="30px";
-	document.getElementById("navpages-expander").style.height="30px";
+window.addEventListener('scroll', function ()
+{
+	let topHeader = document.querySelector('.top-header');
+	let isScrolled = window.scrollY > 0;
+	topHeader.classList.toggle('top-header-scrolled', isScrolled);
+	if (window.scrollY == 0) navbarUnExpand();
+});
+
+function navbarExpand()
+{
+	let topHeader = document.querySelector('.top-header');
+	topHeader.classList.add('top-header-scrolled');
+	document.getElementById("navbar-expanded").style.height="4rem";
+	document.getElementById("navbar-expander").setAttribute("onClick", "javascript: navbarUnExpand();");
+	document.getElementById("navbar-expander").style.width="30px";
+	document.getElementById("navbar-expander").style.height="30px";
 }
 
-function navpagesUnExpand() {
-	let nav = document.querySelector('nav');
-	let windowPosition = window.scrollY > 0;
-	nav.classList.toggle('scrolledNav', windowPosition);
-	document.getElementById("navpages-expanded").style.height="0";
-	document.getElementById("navpages-expander").setAttribute("onClick", "javascript: navpagesExpand();");
-	document.getElementById("navpages-expander").style.width="40px";
-	document.getElementById("navpages-expander").style.height="40px";
+function navbarUnExpand()
+{
+	let topHeader = document.querySelector('.top-header');
+	let isScrolled = window.scrollY > 0;
+	topHeader.classList.toggle('top-header-scrolled', isScrolled);
+	document.getElementById("navbar-expanded").style.height="0";
+	document.getElementById("navbar-expander").setAttribute("onClick", "javascript: navbarExpand();");
+	document.getElementById("navbar-expander").style.width="40px";
+	document.getElementById("navbar-expander").style.height="40px";
 }
 
-function closeTopAnnouncement() {
+function closeTopAnnouncement()
+{
 	document.getElementById("top-announcement").style.display="none";
-}
+}*/
