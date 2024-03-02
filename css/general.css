@@ -2,7 +2,8 @@
 {
 	--clr-main: #F05FCD;
 	--clr-main-gradient: linear-gradient(to right, #567AFA, #9F55FA, #F05FCD, #F15C81, #EE8843);
-	--clr-main-gradient-title: linear-gradient(to right, #9F55FA, #F05FCD, #F15C81, #EE8843);
+	/* --clr-main-gradient-title: linear-gradient(to right, #9F55FA, #F05FCD, #F15C81, #EE8843); */
+	--clr-main-gradient-title: linear-gradient(to right, #9F55FA, #F05FCD, #F15C81, #F05FCD, #9F55FA);
 	--clr-main-gradient-btn-1: var(--clr-main-gradient);
 	--clr-main-gradient-btn-2: var(--clr-main-gradient);
 
@@ -97,6 +98,11 @@
 	background-clip: text;
 }
 
+.second-text
+{
+	color: var(--clr-white-tr-50);
+}
+
 .cursor
 {
 	position: fixed;
@@ -108,7 +114,7 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 	pointer-events: none;
-	transition: width 0.2s, height 0.2s;
+	transition: width 0.2s, height 0.2s, opacity 0.2s;
 	z-index: 10000;
 }
 
@@ -123,7 +129,7 @@
 {
 	opacity: 0.5;
 	mix-blend-mode: difference;
-	transition: opacity 0.2s;
+	transition: opacity 0.2s, opacity 0.2s;
 }
 
 .cursor-glow
@@ -216,6 +222,33 @@
 		box-shadow: inset 0 0 0 1rem transparent;
 	}
 } */
+
+.noise-overlay
+{
+	position: fixed;
+	inset: 0;
+	mix-blend-mode: overlay;
+	z-index: 50000;
+	user-select: none;
+	pointer-events: none;
+}
+
+.noise-overlay::before
+{
+	content: "";
+	position: fixed;
+	animation: noise 1.2s steps(3) both infinite;
+	will-change: auto;
+	background-image: url("../images/noise.jpg");
+	background-size: 1024px;
+	width: 200%;
+	height: 200%;
+	left: -50%;
+	top: -50%;
+	opacity: 0.15;
+	user-select: none;
+	pointer-events: none;
+}
 
 @keyframes noise
 {

@@ -19,8 +19,8 @@ function animFrame()
 	cursor.style.left = lerp(cursor.style.left.replace('px', ''), inputX, 0.1) + "px";
 	cursor.style.top = lerp(cursor.style.top.replace('px', ''), inputY, 0.1) + "px";
 
-	cursorGlow.style.left = lerp(cursor.style.left.replace('px', ''), inputX, 0.9) + "px";
-	cursorGlow.style.top = lerp(cursor.style.top.replace('px', ''), inputY, 0.9) + "px";
+	cursorGlow.style.left = lerp(cursorGlow.style.left.replace('px', ''), inputX, 0.9) + "px";
+	cursorGlow.style.top = lerp(cursorGlow.style.top.replace('px', ''), inputY, 0.9) + "px";
 
 	if (currentMouseTarget != 'null') cursorGlow.style.opacity = '0.5';
 	else cursorGlow.style.opacity = '0';

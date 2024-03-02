@@ -124,33 +124,6 @@
 	transform: rotate(45deg);
 }
 
-.noise-overlay
-{
-	position: fixed;
-	inset: 0;
-	mix-blend-mode: overlay;
-	z-index: 50000;
-	user-select: none;
-	pointer-events: none;
-}
-
-.noise-overlay::before
-{
-	content: "";
-	position: fixed;
-	animation: noise 1.2s steps(3) both infinite;
-	will-change: auto;
-	background-image: url("../images/noise.jpg");
-	background-size: 1024px;
-	width: 200%;
-	height: 200%;
-	left: -50%;
-	top: -50%;
-	opacity: 0.15;
-	user-select: none;
-	pointer-events: none;
-}
-
 .main-container
 {
 	position: relative;
@@ -180,6 +153,13 @@
 	height: 45px;
 	opacity: 0.75;
 	object-fit: contain;
+	pointer-events: all;
+}
+
+.top-header-logo:hover
+{
+	opacity: 0.9;
+	pointer-events: all;
 }
 
 .top-header-link
@@ -265,6 +245,21 @@
 	color: transparent;
 	background: var(--clr-main-gradient-title);
 	background-clip: text;
+	background-size: 200%;
+	animation: header-title-gradient-anim 5s linear infinite;
+}
+
+@keyframes header-title-gradient-anim
+{
+	from
+	{
+		background-position: 0% center;
+	}
+
+	to
+	{
+		background-position: -200% center;
+	}
 }
 
 .header-title-changing-1
@@ -379,8 +374,8 @@
 /* CONTENT */
 .content
 {
-	width: max-content;
-	height: max-content;
+	width: fit-content;
+	height: fit-content;
 	margin: 0 auto;
 	padding: 160px 0 0 0;
 	display: flex;
@@ -398,8 +393,64 @@
 
 .content-text
 {
+	margin: 0 0 10rem 0;
 	color: var(--clr-white-tr-50);
 	text-align: center;
+}
+
+.slider
+{
+	width: fit-content;
+	height: fit-content;
+	margin: 0 0 5rem 0;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 5rem;
+	flex-wrap: nowrap;
+}
+
+.slider-control
+{
+	width: 50px;
+	height: 50px;
+}
+
+.slider-container
+{
+	width: fit-content;
+	height: fit-content;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+	flex-wrap: nowrap;
+}
+
+.slider-card
+{
+	width: 15rem;
+	height: 15rem;
+	pointer-events: all;
+}
+
+.slider-card:hover
+{
+	transform: scale(1.1);
+}
+
+.slider-title
+{
+	position: absolute;
+	bottom: 25vh;
+	margin: 0 0 0.5rem 0;
+}
+
+.slider-text
+{
+	position: absolute;
+	bottom: 22vh;
 }
 
 /* .top-header-scrolled
