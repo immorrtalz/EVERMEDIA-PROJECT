@@ -94,7 +94,7 @@
 .gray-gradient
 {
 	color: transparent;
-	background: linear-gradient(to bottom right, white, rgb(127, 127, 127));
+	background: linear-gradient(to bottom right, white, rgb(64, 64, 64));
 	background-clip: text;
 }
 
