@@ -1,8 +1,8 @@
-const headerTitleChanging1 = document.querySelector('.header-title-changing-1');
-const headerTitleChanging2 = document.querySelector('.header-title-changing-2');
-var headerTitleChangeIndex = 0;
+document.querySelector("#currentyear").textContent = new Date().getFullYear();
 
-headerTitleChange();
+const headerTitleChanging1 = document.querySelectorAll('.header-title-changing')[0];
+const headerTitleChanging2 = document.querySelectorAll('.header-title-changing')[1];
+var headerTitleChangeIndex = 0;
 
 function headerTitleChange()
 {

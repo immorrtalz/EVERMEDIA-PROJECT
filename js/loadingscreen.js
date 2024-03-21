@@ -1,4 +1,4 @@
-$("body").css("overflow", "hidden");
+/* $("body").css("overflow", "hidden");
 
 $(window).on('load', function() {
 	var preloaderFadeOutTime = 500;
@@ -12,4 +12,4 @@ $(window).on('load', function() {
 		}, 750);
 	}
 	hidePreloader();
-})
+}) */

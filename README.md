@@ -11,5 +11,5 @@ Main site of EVERMEDIA PROJECT by [immorrtalz](https://github.com/immorrtalz)
 ---
 
 > [!CAUTION]
-> **You're viewing the dev version of the site. This is not a representation of the final version.**
+> **You're viewing the dev version of the site. It does NOT represent a final version.**
 > View the [current release version](https://github.com/immorrtalz/EVERMEDIA-PROJECT/tree/main), but please keep in mind that it's outdated.

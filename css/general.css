@@ -15,8 +15,6 @@
 	--clr-dark-light: #212127;
 	--clr-dark-light-tr-25: #21212744;
 
-	--clr-light: #EEE8F0;
-
 	--clr-white-tr-25: rgba(255, 255, 255, 0.25);
 	--clr-white-tr-50: rgba(255, 255, 255, 0.5);
 	--clr-white-tr-75: rgba(255, 255, 255, 0.75);
@@ -146,6 +144,16 @@
 	transition: opacity 0.1s;
 	mix-blend-mode: plus-lighter;
 	z-index: 9999;
+}
+
+.tilt
+{
+	transition: all 0.2s, transform 0s;
+}
+
+.tilt:hover
+{
+	z-index: 1;
 }
 
 /* .loading-container
@@ -314,6 +322,7 @@ html
 	height: 100%;
 	margin: 0;
 	padding: 0;
+	scroll-behavior: smooth;
 }
 
 body
@@ -364,9 +373,9 @@ h6
 	background-color: var(--clr-white-transparent-60);
 } */
 
-/* .btn-ripple
+.btn-ripple
 {
-	overflow: hidden;
+	overflow: clip;
 }
 
 .btn-ripple .ripple
@@ -378,7 +387,7 @@ h6
 	width: 0;
 	height: 0;
 	border-radius: 50%;
-	background-color: var(--clr-white-transparent-60);
+	background: var(--clr-white-tr-25);
 	background-position: center;
 	animation: ripple 1s;
 	opacity: 0;
@@ -401,4 +410,4 @@ h6
 		width: 200%;
 		padding-bottom: 200%;
 	}
-} */
+}
