@@ -583,6 +583,7 @@
 .footer-2-copyright *
 {
 	color: inherit;
+	font-size: inherit;
 }
 
 .footer-2-email
