@@ -5,74 +5,51 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<title>404 - EVEREST STUDIO Project</title>
+	<title>EVERMEDIA PROJECT - 404 NOT FOUND</title>
 
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link href="css/general.css" rel="stylesheet" type="text/css">
-	<link href="css/styles.css" rel="stylesheet" type="text/css">
-	<link rel="icon" href="images/favicon.png">
+	<link href="./css/general.css" rel="stylesheet" type="text/css">
+	<link href="./css/styles.css" rel="stylesheet" type="text/css">
+	<link href="./images/favicon.png" rel="icon">
 </head>
 
-<body class="body">
+<body>
 
-	<div class="cursor" id="cursor"></div>
+	<div class="cursor"></div>
+	<div class="cursor-glow"></div>
 
-	<nav class="navbar">
-		<!-- <div class="top-announcement" id="top-announcement">
-			<h6>Это уведомление вверху экрана</h6>
-			<button class="top-announcement-button btn-ripple" onclick="closeTopAnnouncement()">
-				<span class="material-icons">close</span>
-			</button>
-		</div> -->
+	<span class="noise-overlay"></span>
 
-		<img src="images/logo.png" alt="EVERMEDIA PROJECT">
+	<div class="blobs">
+		<div class="blob1"></div>
+		<div class="blob2"></div>
+	</div>
 
-		<div class="navpages">
-			<a href="/" class="navpages-item navpages-current btn-ripple">
-				<p>HOME</p>
-			</a>
+	<div class="top-header center-x panel">
 
-			<a href="games" class="navpages-item btn-ripple">
-				<p>GAMES</p>
-			</a>
+		<img class="top-header-logo" src="images/logo-sm.png" alt="EVERMEDIA PROJECT">
 
-			<a href="profiles" class="navpages-item btn-ripple">
-				<p>OWNER</p>
-			</a>
+		<a href="./" class="top-header-link" data-translationid="0">Home</a>
+		<a href="./#projects" class="top-header-link" data-translationid="1">Projects</a>
+		<a href="./#design" class="top-header-link" data-translationid="2">Design</a>
+
+	</div>
+
+	<div class="main-container" id="home">
+		<div class="header absolute center-xy">
+
+			<h1 class="header-title gray-gradient">
+				<span class="header-title-changing">
+					<span>404</span>
+				</span><br>
+				<span data-translationid="31">NOT FOUND</span>
+			</h1>
+
+			<h6 class="header-text" data-translationid="32">The content you're looking for was not found...</h6>
+
+			<a href="./" class="button" data-translationid="33"><span class="button-blur"></span>Go back</a>
+
 		</div>
-
-		<button class="navpages-expander" id="navpages-expander" onclick="navpagesExpand()"></button>
-
-		<div class="navpages-expanded" id="navpages-expanded">
-			<a href="/" class="navpages-item navpages-current btn-ripple">
-				<p>HOME</p>
-			</a>
-
-			<a href="games" class="navpages-item btn-ripple">
-				<p>GAMES</p>
-			</a>
-
-			<a href="profiles" class="navpages-item btn-ripple">
-				<p>OWNER</p>
-			</a>
-		</div>
-
-	</nav>
-
-	<header class="main-header">
-		<div class="container">
-			<div class="container-header">
-				<h1 class="p404-title">404<br>PAGE NOT FOUND</h1>
-				<p>The content you are looking for was not found...</p>
-				<div class="header-buttons">
-					<a class="btn-solid-fill btn-ripple" href="/"><span class="btn-border"></span>Back to Main page</a>
-				</div>
-			</div>
-		</div>
-	</header>
-
-	<div class="p404-temp"></div>
+	</div>
 
 </body>
 
@@ -82,9 +59,8 @@
 	crossorigin="anonymous">
 </script>
 
-<script src="js/main.js"></script>
-<script src="js/ripple.js"></script>
-<script src="js/slider.js"></script>
+<script src="js/loadingscreen.js"></script>
 <script src="js/cursor.js"></script>
-<script src="js/tilt.jquery.js"></script>
+<script src="js/translation.js"></script>
+
 </html>
