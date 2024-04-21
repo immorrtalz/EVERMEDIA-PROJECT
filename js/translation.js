@@ -1,4 +1,4 @@
-$(window).on('load', function()
+function initialize()
 {
 	langId = localStorage.getItem('langId');
 
@@ -7,7 +7,7 @@ $(window).on('load', function()
 
 	changeTranslation(langId);
 	headerTitleChange();
-});
+}
 
 const translationsEN = [
 	"Home",
@@ -46,7 +46,21 @@ const translationsEN = [
 	"Go back",
 	"all rights reserved",
 	"Privacy Policy",
-	"Terms & Conditions"//currently 36
+	"Terms & Conditions",
+	"Support",
+	"senpai",
+	"the\u00A0project",
+	"with\u00A0money",
+	"Do a good deed – help us with a coin 🙏",
+	"Donate",
+	"DONATE",
+	"Choose a convenient payment method",
+	"By a card",
+	"Any bank cards",
+	"Other",
+	"Contact us on Telegram",
+	"Click to copy address",
+	"❤️Support⚡"//currently 50
 ];
 
 const translationsRU = [
@@ -86,7 +100,21 @@ const translationsRU = [
 	"На главную",
 	"все права защищены",
 	"Политика конфид-ти",
-	"Условия испол-я"
+	"Условия испол-я",
+	"Поддержи",
+	"семпая",
+	"проект",
+	"денюжкой",
+	"Сделай доброе дело – помоги нам копеечкой 🙏",
+	"Пожертвовать",
+	"ПОЖЕРТВОВАТЬ",
+	"Выбери удобный метод оплаты",
+	"Картой",
+	"Любые банковские карты",
+	"Другое",
+	"Напиши в Telegram",
+	"Нажми, чтобы скопировать адрес",
+	"❤️Поддержать⚡"
 ];
 
 const translatableElms = document.querySelectorAll('[data-translationid]');

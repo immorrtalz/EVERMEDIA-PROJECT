@@ -338,6 +338,11 @@ a
 	text-decoration: none;
 }
 
+a:hover
+{
+	cursor: pointer;
+}
+
 h1
 {
 	font-size: 310%;

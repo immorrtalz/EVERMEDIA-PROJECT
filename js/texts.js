@@ -3,6 +3,7 @@ document.querySelector("#currentyear").textContent = new Date().getFullYear();
 const headerTitleChanging1 = document.querySelectorAll('.header-title-changing')[0];
 const headerTitleChanging2 = document.querySelectorAll('.header-title-changing')[1];
 var headerTitleChangeIndex = 0;
+var intervalSet = false;
 
 function headerTitleChange()
 {
@@ -30,6 +31,15 @@ function headerTitleChange()
 	}
 
 	headerTitleChangeIndex = headerTitleChangeIndex == 0 ? 1 : 0;
+
+	if (!intervalSet)
+	{
+		intervalSet = true;
+		setInterval(headerTitleChange, 2000);
+	}
 }
 
-setInterval(headerTitleChange, 2000);
+function copyToClipboard(text)
+{
+	navigator.clipboard.writeText(text);
+}

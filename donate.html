@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>EVERMEDIA PROJECT - Donate</title>
+
+	<link href="./css/general.css" rel="stylesheet" type="text/css">
+	<link href="./css/styles.css" rel="stylesheet" type="text/css">
+	<link href="./images/favicon.png" rel="icon">
+</head>
+
+<body>
+
+	<div class="cursor"></div>
+	<div class="cursor-glow"></div>
+	<span class="noise-overlay"></span>
+
+	<div class="loading">
+		<div class="loading-element absolute center-xy"></div>
+	</div>
+
+	<span class="page">
+
+		<div class="blobs">
+			<div class="blob1"></div>
+			<div class="blob2"></div>
+		</div>
+
+		<div class="top-header center-x panel">
+
+			<img loading="lazy" class="top-header-logo" src="images/logo-sm.png" alt="EVERMEDIA PROJECT">
+
+			<a href="./" class="top-header-link" data-translationid="0">Home</a>
+			<a href="./index#projects" class="top-header-link" data-translationid="1">Projects</a>
+			<a href="./index#design" class="top-header-link" data-translationid="2">Design</a>
+			<a href="./donate" class="top-header-link support-heart-beat">❤️</a>
+
+		</div>
+
+		<div class="main-container" id="home">
+			<div class="header absolute center-xy">
+
+				<a class="header-tip" href="./profiles" data-translationid="3">by immorrtalz</a>
+
+				<h1 class="header-title gray-gradient"><span data-translationid="37">Поддержи </span>
+					<span class="header-title-changing">
+						<span data-translationid="38">семпая</span>
+						<span data-translationid="39">проект</span>
+					</span>
+					<br>
+					<span class="header-title-changing">
+						<span><div class="support-heart-beat">❤️</div></span>
+						<span><div class="support-heart-beat">⚡</div></span>
+					</span>
+					<span data-translationid="40">денюжкой</span>
+				</h1>
+
+				<h6 class="header-text" data-translationid="41">Сделай доброе дело – помоги нам копеечкой 🙏</h6>
+
+				<a href="#donate" class="button" data-translationid="42"><span class="button-blur"></span>Пожертвовать</a>
+
+			</div>
+
+			<div class="header-arrows absolute center-x">
+				<span><img loading="lazy" class="header-arrow-1" src="./images/arrow.png"></span>
+				<span><img loading="lazy" class="header-arrow-2" src="./images/arrow.png"></span>
+				<span><img loading="lazy" class="header-arrow-3" src="./images/arrow.png"></span>
+			</div>
+
+		</div>
+
+		<div class="main-container" id="donate">
+			<div class="content">
+
+				<h3 class="content-title gray-gradient" data-translationid="43">ПОЖЕРТВОВАТЬ</h3>
+				<h6 class="content-text second-text" data-translationid="44">Выбери удобный метод оплаты</h6>
+
+				<div class="bento-container bento-container-two">
+
+					<a class="bento-card panel btn-ripple tilt" href="https://www.tinkoff.ru/cf/5mIoVTb6Pyl" target="_blank" data-tilt data-tilt-perspective="500">
+						<img loading="lazy" class="bento-card-image" src="./images/donate/bank-cards.jpg">
+						<h5 class="bento-card-title gray-gradient" data-translationid="45">Картой</h5>
+						<p class="bento-card-text second-text" data-translationid="46">Любые банковские карты</p>
+					</a>
+
+					<a class="bento-card panel btn-ripple tilt" onclick="copyToClipboard('bc1q7ywj3fj2z9lrh8p4ehr32xvkre7883mgp8ces4')" target="_blank" data-tilt data-tilt-perspective="500">
+						<img loading="lazy" class="bento-card-image" src="./images/donate/bitcoin.jpg">
+						<h5 class="bento-card-title gray-gradient">Bitcoin</h5>
+						<p class="bento-card-text second-text" data-translationid="49">Click to copy address</p>
+					</a>
+
+					<a class="bento-card panel btn-ripple tilt" onclick="copyToClipboard('TQqSkSpXFqHxrcKhAdZjpyt7CMpkkynZ2d')" target="_blank" data-tilt data-tilt-perspective="500">
+						<img loading="lazy" class="bento-card-image" src="./images/donate/usdt.jpg">
+						<h5 class="bento-card-title gray-gradient">USDT [TRC20]</h5>
+						<p class="bento-card-text second-text" data-translationid="49">Click to copy address</p>
+					</a>
+
+					<a class="bento-card panel btn-ripple tilt" href="https://t.me/immorrtalz" target="_blank" data-tilt data-tilt-perspective="500">
+						<img loading="lazy" class="bento-card-image" src="./images/donate/telegram.jpg">
+						<h5 class="bento-card-title gray-gradient" data-translationid="47">Другое</h5>
+						<p class="bento-card-text second-text" data-translationid="48">Напиши в Telegram</p>
+					</a>
+
+				</div>
+
+			</div>
+		</div>
+
+		<div class="footer panel">
+
+			<div class="footer-1">
+
+				<img loading="lazy" class="footer-logo" src="./images/logo.png">
+
+				<div class="footer-1-inner">
+
+					<div class="footer-1-inner-block">
+						<p class="footer-1-inner-block-title" data-translationid="27">LANGUAGE</p>
+						<a class="footer-1-inner-block-item second-text" onclick="changeTranslation(0)">English</a>
+						<a class="footer-1-inner-block-item second-text" onclick="changeTranslation(1)">Русский</a>
+					</div>
+
+					<div class="footer-1-inner-block">
+						<p class="footer-1-inner-block-title" data-translationid="28">LINKS</p>
+						<a class="footer-1-inner-block-item second-text" data-translationid="35">Privacy Policy</a>
+						<a class="footer-1-inner-block-item second-text" data-translationid="36">Terms & Conditions</a>
+						<a class="footer-1-inner-block-item second-text" href="https://t.me/immorrtalz" target="_blank" data-translationid="29">* Заказать дизайн</a>
+						<a class="footer-1-inner-block-item second-text" href="./donate" target="_blank" data-translationid="50">❤️Поддержать⚡</a>
+					</div>
+
+					<div class="footer-1-inner-block">
+						<p class="footer-1-inner-block-title" data-translationid="30">SOCIALS</p>
+						<div class="footer-1-inner-block-rowcontainer">
+
+							<a class="footer-1-inner-block-rowcontainer-item" href="https://www.youtube.com/@evermedia-project" target="_blank">
+								<img loading="lazy" src="./images/socials/yt.png">
+								<img loading="lazy" src="./images/socials/yt.png">
+							</a>
+
+							<a class="footer-1-inner-block-rowcontainer-item" href="https://discord.gg/GbzYVdF" target="_blank">
+								<img loading="lazy" src="./images/socials/ds.png">
+								<img loading="lazy" src="./images/socials/ds.png">
+							</a>
+
+							<a class="footer-1-inner-block-rowcontainer-item" href="https://t.me/evermedia_project" target="_blank">
+								<img loading="lazy" src="./images/socials/tg.png">
+								<img loading="lazy" src="./images/socials/tg.png">
+							</a>
+
+							<a class="footer-1-inner-block-rowcontainer-item" href="https://vk.com/evermedia_project" target="_blank">
+								<img loading="lazy" src="./images/socials/vk.png">
+								<img loading="lazy" src="./images/socials/vk.png">
+							</a>
+
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="footer-2">
+				<p class="footer-2-copyright second-text">© 2019-<span id="currentyear"></span> EVERMEDIA PROJECT, <span data-translationid="34">all rights reserved</span></p>
+				<a class="footer-2-email" href="mailto:evereststudioproject@bk.ru">evereststudioproject@bk.ru</a>
+			</div>
+
+		</div>
+
+	</span>
+
+</body>
+
+<script
+	src="https://code.jquery.com/jquery-3.6.0.js"
+	integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+	crossorigin="anonymous">
+</script>
+
+<script src="js/loadingscreen.js"></script>
+<script src="js/cursor.js"></script>
+<script src="js/texts.js"></script>
+<script src="js/translation.js"></script>
+<script src="js/ripple.js"></script>
+<script src="js/tilt.jquery.js"></script>
+
+</html>

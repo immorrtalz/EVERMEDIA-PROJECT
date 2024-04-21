@@ -45,4 +45,5 @@ onReady(() =>
 	document.body.style.overflow = 'visible';
 	setVisible('.page', true);
 	setVisible('.loading', false);
+	initialize();
 });
