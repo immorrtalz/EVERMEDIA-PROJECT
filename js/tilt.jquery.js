@@ -116,13 +116,16 @@
 			const height = $(this).outerHeight();
 			const left = $(this).offset().left;
 			const top = $(this).offset().top;
-			const percentageX = (this.mousePositions.x - left) / width;
-			const percentageY = (this.mousePositions.y - top) / height;
+
+			var _mousePositions = this.mousePositions ? this.mousePositions : {x: 0, y: 0};
+
+			const percentageX = (_mousePositions.x - left) / width;
+			const percentageY = (_mousePositions.y - top) / height;
 			// x or y position inside instance / width of instance = percentage of position inside instance * the max tilt value
 			const tiltX = ((this.settings.maxTilt / 2) - ((percentageX) * this.settings.maxTilt)).toFixed(2);
 			const tiltY = (((percentageY) * this.settings.maxTilt) - (this.settings.maxTilt / 2)).toFixed(2);
 			// angle
-			const angle = Math.atan2(this.mousePositions.x - (left+width/2),- (this.mousePositions.y - (top+height/2)) )*(180/Math.PI);
+			const angle = Math.atan2(_mousePositions.x - (left+width/2),- (_mousePositions.y - (top+height/2)) )*(180/Math.PI);
 			// Return x & y tilt values
 			return {tiltX, tiltY, 'percentageX': percentageX * 100, 'percentageY': percentageY * 100, angle};
 		};

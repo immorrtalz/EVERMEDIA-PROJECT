@@ -1,19 +1,3 @@
-/* $("body").css("overflow", "hidden");
-
-$(window).on('load', function() {
-	var preloaderFadeOutTime = 500;
-	function hidePreloader()
-	{
-		var preloader = $('.loading-container');
-		preloader.css("top", window.scrollY + 1);
-		setTimeout(function() {
-			preloader.fadeOut(preloaderFadeOutTime);
-			$("body").css("overflow", "auto");
-		}, 750);
-	}
-	hidePreloader();
-}) */
-
 function onReady(callback)
 {
 	var intervalId = window.setInterval(() =>
@@ -28,7 +12,7 @@ function onReady(callback)
 
 function setVisible(selector, visible)
 {
-	if (!visible)
+	if (visible == false)
 	{
 		document.querySelector(selector).style.opacity = '0';
 
@@ -43,7 +27,7 @@ function setVisible(selector, visible)
 onReady(() =>
 {
 	document.body.style.overflow = 'visible';
+	initialize();
 	setVisible('.page', true);
 	setVisible('.loading', false);
-	initialize();
 });
