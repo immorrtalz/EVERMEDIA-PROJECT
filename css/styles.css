@@ -131,6 +131,13 @@
 	height: 100svh;
 }
 
+.sub-main-container
+{
+	position: relative;
+	width: 100%;
+	height: fit-content;
+}
+
 /* TOP HEADER */
 .top-header
 {
