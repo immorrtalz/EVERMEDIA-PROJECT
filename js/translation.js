@@ -61,12 +61,15 @@ const translationsEN = [
 	"Contact us on Telegram",
 	"Click to copy address",
 	"❤️Support⚡",
-	"About game",
+	"About the game",
 	"by EVERMEDIA PROJECT",
 	"Conquer space in a mobile runner for Android!",
 	"Download",
 	"LICENSES AND AGREEMENTS",
-	"Copyrights and other aspects"//currently 57
+	"Copyrights and other aspects",
+	"ABOUT THE GAME",
+	"Creation history, gameplay, etc.",
+	"Development of the game began on January 23, 2022, on a quiet winter evening. By the summer of that year, several alpha builds had been released, and the first testers appeared.\n\nBy the end of the year, the game went into beta, and the speed of development increased greatly, more and more attention was paid to the comfort of the game process.\n\nThe last beta version was released in May 2023, and on June 24 of the same year The game was released on four platforms."//currently 60
 ];
 
 const translationsRU = [
@@ -126,7 +129,10 @@ const translationsRU = [
 	"Покори космос в мобильном раннере для Android!",
 	"Скачать",
 	"ЛИЦЕНЗИИ И СОГЛАШЕНИЯ",
-	"Авторские права и иные аспекты"
+	"Авторские права и иные аспекты",
+	"ОБ ИГРЕ",
+	"История создания, геймплей и прочее",
+	"Разработка игры началась 23 января 2022 года, в тихий зимний вечер. К лету того же года было выпущено несколько альфа-сборок, появились первые тестеры.<br><br>К концу года игра вышла в бету, и скорость разработки сильно увеличилась, всё больше внимания уделялось на комфортность процесса игры.<br><br>В мае 2023 вышла последняя бета-версия, а 24 июня того же года состоялся релиз игры на четырёх площадках."
 ];
 
 const translatableElms = document.querySelectorAll('[data-translationid]');
