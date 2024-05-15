@@ -326,6 +326,7 @@
 
 .header-text
 {
+	max-width: 90vw;
 	margin: 0 0 45px 0;
 	color: var(--clr-white-tr-50);
 	font-size: 155%;
