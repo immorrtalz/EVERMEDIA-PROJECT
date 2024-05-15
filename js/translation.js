@@ -60,7 +60,13 @@ const translationsEN = [
 	"Other",
 	"Contact us on Telegram",
 	"Click to copy address",
-	"❤️Support⚡"//currently 50
+	"❤️Support⚡",
+	"About game",
+	"by EVERMEDIA PROJECT",
+	"Conquer space in a mobile runner for Android!",
+	"Download",
+	"LICENSES AND AGREEMENTS",
+	"Copyrights and other aspects"//currently 57
 ];
 
 const translationsRU = [
@@ -114,7 +120,13 @@ const translationsRU = [
 	"Другое",
 	"Напиши в Telegram",
 	"Нажми, чтобы скопировать адрес",
-	"❤️Поддержать⚡"
+	"❤️Поддержать⚡",
+	"Об игре",
+	"EVERMEDIA PROJECT",
+	"Покори космос в мобильном раннере для Android!",
+	"Скачать",
+	"ЛИЦЕНЗИИ И СОГЛАШЕНИЯ",
+	"Авторские права и иные аспекты"
 ];
 
 const translatableElms = document.querySelectorAll('[data-translationid]');
