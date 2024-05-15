@@ -7,6 +7,8 @@ var intervalSet = false;
 
 function headerTitleChange()
 {
+	if (headerTitleChanging1 === undefined || headerTitleChanging2 === undefined) return;
+
 	headerTitleChanging1.style.width = headerTitleChanging1.children[headerTitleChangeIndex].getBoundingClientRect().width + 'px';
 	headerTitleChanging2.style.width = headerTitleChanging2.children[headerTitleChangeIndex].getBoundingClientRect().width + 'px';
 
