@@ -421,12 +421,14 @@
 
 .content-title
 {
+	max-width: 90vw;
 	margin: 0 0 0.5rem 0;
 	text-align: center;
 }
 
 .content-text
 {
+	max-width: 90vw;
 	margin: 0 0 5rem 0;
 	color: var(--clr-white-tr-50);
 	text-align: center;
