@@ -235,7 +235,6 @@
 	content: "";
 	position: fixed;
 	animation: noise 1.2s steps(3) both infinite;
-	will-change: auto;
 	background-image: url("../images/noise.jpg");
 	background-size: 1024px;
 	width: 200%;

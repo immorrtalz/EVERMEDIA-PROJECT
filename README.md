@@ -10,5 +10,5 @@ Main site of EVERMEDIA PROJECT by [immorrtalz](https://github.com/immorrtalz)
 
 ---
 
-> [!IMPORTANT]
-> The site is NOT 100% completed: some links aren't working, not all visual effects are implemented and a `profiles` page design is still outdated
+> [!TIP]
+> This repository includes immorrtalz' [profiles page](https://evermedia-project.ru/profiles)

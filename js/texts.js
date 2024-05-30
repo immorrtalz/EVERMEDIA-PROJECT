@@ -1,12 +1,16 @@
-document.querySelector("#currentyear").textContent = new Date().getFullYear();
+if (document.querySelector("#currentyear") !== null && document.querySelector("#currentyear") !== undefined)
+	document.querySelector("#currentyear").textContent = new Date().getFullYear();
 
-const headerTitleChanging1 = document.querySelectorAll('.header-title-changing')[0];
-const headerTitleChanging2 = document.querySelectorAll('.header-title-changing')[1];
+var headerTitleChanging1;
+var headerTitleChanging2;
 var headerTitleChangeIndex = 0;
 var intervalSet = false;
 
 function headerTitleChange()
 {
+	headerTitleChanging1 = document.querySelectorAll('.header-title-changing')[0];
+	headerTitleChanging2 = document.querySelectorAll('.header-title-changing')[1];
+
 	if (headerTitleChanging1 === undefined || headerTitleChanging2 === undefined) return;
 
 	headerTitleChanging1.style.width = headerTitleChanging1.children[headerTitleChangeIndex].getBoundingClientRect().width + 'px';

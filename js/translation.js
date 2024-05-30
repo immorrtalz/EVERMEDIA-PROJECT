@@ -72,8 +72,23 @@ const translationsEN = [
 	"Development of the game began on January 23, 2022, on a quiet winter evening. By the summer of that year, several alpha builds had been released, and the first testers appeared.\n\nBy the end of the year, the game went into beta, and the speed of development increased greatly, more and more attention was paid to the comfort of the game process.\n\nThe last beta version was released in May 2023, and on June 24 of the same year The game was released on four platforms.",
 	"Dodge enemies, score points and collect coins at an increasing speed to improve bonuses and buy new ships!\n\nBe the first to conquer the depths of space!\n\nTake your place in the TOP 10 records around the world!",
 	"In space you will encounter 5 types of enemies: Mine, Mine-Demolition, Electro Anomaly, Gravitator and Asteroid.\n\nEach of them has its own characteristics, be careful!\n\n5 different bonuses will help you resist them: Shield, x2 Coins, Chrono-Warp, Magnet, Disruptor and x2 Score - each with its own unique mechanics!",
-	"The game has leaderboard systems, cases, daily rewards and skins, and if you get tired of the Classic game mode, there are a few more to freshen up!\n\nNo need to be constantly connected to the Internet: all saves are duplicated in encrypted offline files. All data from them is uploaded to the cloud when you enter the game online."
-	//currently 63
+	"The game has leaderboard systems, cases, daily rewards and skins, and if you get tired of the Classic game mode, there are a few more to freshen up!\n\nNo need to be constantly connected to the Internet: all saves are duplicated in encrypted offline files. All data from them is uploaded to the cloud when you enter the game online.",
+	"Profiles",
+	"PROFILES",
+	"Hi, I am ",
+	"Programmer, designer, game developer and content creator",
+	"Profiles in social networks, games and other services",
+	"Socials",
+	"Ruslan Farkhutdinov",
+	"Development and design",
+	"Design portfolio",
+	"Donations page",
+	"For any questions",
+	"Own projects and projects with my participation",
+	"Owner",
+	"Games",
+	"Other"
+	//currently 78
 ];
 
 const translationsRU = [
@@ -88,7 +103,7 @@ const translationsRU = [
 	"картинки",
 	"код",
 	"Прочувствуй этот мир с нами!",
-	"Погрузиться",
+	"Подробнее",
 	"ПРОЕКТЫ",
 	"Приложения и игры для ПК и смартфонов",
 	"Современный минималистичный аудиоплеер",
@@ -139,7 +154,22 @@ const translationsRU = [
 	"Разработка игры началась 23 января 2022 года, в тихий зимний вечер. К лету того же года было выпущено несколько альфа-сборок, появились первые тестеры.\n\nК концу года игра вышла в бету, и скорость разработки сильно увеличилась, всё больше внимания уделялось на комфортность процесса игры.\n\nВ мае 2023 вышла последняя бета-версия, а 24 июня того же года состоялся релиз игры на четырёх площадках.",
 	"Уклоняйся от врагов, набирай очки и собирай монеты на нарастающей скорости, чтобы улучшать бонусы и покупать новые корабли!\n\nСтань первым, кто покорит глубины космоса!\n\nЗайми своё место в ТОП-10 рекордов по всему миру!",
 	"В космосе тебе встретятся 5 типов врагов: Мина, Мина-Подрывник, Электро Аномалия, Гравитатор и Астероид.\n\nУ каждого из них есть свои особенности, будь осторожен(-на)!\n\nПротивостоять им помогут 5 разных бонусов: Щит, x2 Монеты, Хроно-варп, Магнит, Дизраптор и x2 Счёт - каждый со своей уникальной механикой!",
-	"В игре есть системы лидерборда, кейсов, ежедневных наград и скинов, а если надоест Классический режим игры, есть ещё несколько, чтобы освежиться!\n\nНе нужно постоянно быть подключенным к Интернету: все сохранения дублируются в шифрованных оффлайн-файлах. Все данные из них выгружаются в облако при входе в игру онлайн."
+	"В игре есть системы лидерборда, кейсов, ежедневных наград и скинов, а если надоест Классический режим игры, есть ещё несколько, чтобы освежиться!\n\nНе нужно постоянно быть подключенным к Интернету: все сохранения дублируются в шифрованных оффлайн-файлах. Все данные из них выгружаются в облако при входе в игру онлайн.",
+	"Профили",
+	"ПРОФИЛИ",
+	"Привет, я ",
+	"Программист, дизайнер, разработчик видеоигр и создатель контента",
+	"Профили в соцсетях, играх и других сервисах",
+	"Соцсети",
+	"Руслан Фархутдинов",
+	"Разработка и дизайн",
+	"Портфолио дизайна",
+	"Страница пожертвований",
+	"По любым вопросам",
+	"Собственные проекты и проекты с моим участием",
+	"Основатель",
+	"Игры",
+	"Другое"
 ];
 
 const translatableElms = document.querySelectorAll('[data-translationid]');
