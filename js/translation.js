@@ -83,12 +83,13 @@ const translationsEN = [
 	"Development and design",
 	"Design portfolio",
 	"Donations page",
-	"For any questions",
+	"For any questions (e-mail)",
 	"Own projects and projects with my participation",
 	"Owner",
 	"Games",
-	"Other"
-	//currently 78
+	"Other",
+	"Developer"
+	//currently 79
 ];
 
 const translationsRU = [
@@ -165,11 +166,12 @@ const translationsRU = [
 	"Разработка и дизайн",
 	"Портфолио дизайна",
 	"Страница пожертвований",
-	"По любым вопросам",
+	"По любым вопросам (e-mail)",
 	"Собственные проекты и проекты с моим участием",
 	"Основатель",
 	"Игры",
-	"Другое"
+	"Другое",
+	"Разработчик"
 ];
 
 const translatableElms = document.querySelectorAll('[data-translationid]');
