@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Prop Chase</title>
+
+	<link href="../css/general.css" rel="stylesheet" type="text/css">
+	<link href="../css/styles.css" rel="stylesheet" type="text/css">
+	<link href="./css/styles.css" rel="stylesheet" type="text/css">
+	<link href="./images/favicon.png" rel="icon">
+</head>
+
+<body>
+
+	<div class="cursor"></div>
+	<div class="cursor-glow"></div>
+	<span class="noise-overlay"></span>
+
+	<div class="loading">
+		<div class="loading-element absolute center-xy"></div>
+	</div>
+
+	<span class="page">
+
+		<div class="blobs">
+			<div class="blob1"></div>
+			<div class="blob2"></div>
+		</div>
+
+		<div class="top-header center-x panel">
+
+			<img loading="lazy" class="top-header-logo" src="../images/logo-sm.png" alt="EVERMEDIA PROJECT">
+
+			<a href="../" class="top-header-link" data-translationid="0">Home</a>
+			<a href="#about" class="top-header-link" data-translationid="51">Об игре</a>
+			<a href="../donate" class="top-header-link support-heart-beat">❤️</a>
+
+		</div>
+
+		<div class="main-container" id="home">
+			<div class="header absolute center-xy">
+
+				<a class="header-tip" href="../" data-translationid="52">by EVERMEDIA PROJECT</a>
+
+				<h1 class="header-title gray-gradient">Prop Chase</h1>
+
+				<h6 class="header-text">Участвуй в первом открытом альфа-тестировании!</h6>
+
+				<a href="https://www.youtube.com/@evermedia-project" target="_blank" class="button propchase-sitedownload-button"><span class="button-blur"></span>Подробнее</a>
+
+			</div>
+
+			<div class="header-arrows absolute center-x">
+				<span><img loading="lazy" class="header-arrow-1" src="../images/arrow.png"></span>
+				<span><img loading="lazy" class="header-arrow-2" src="../images/arrow.png"></span>
+				<span><img loading="lazy" class="header-arrow-3" src="../images/arrow.png"></span>
+			</div>
+
+		</div>
+
+		<div class="sub-main-container" id="about">
+			<div class="content">
+
+				<h3 class="content-title gray-gradient" data-translationid="57">ОБ ИГРЕ</h3>
+				<h6 class="content-text second-text" data-translationid="58">История создания, геймплей и прочее</h6>
+
+				<div class="propchase-about-items">
+
+					<div class="panel propchase-about-item">
+						<img loading="lazy" class="propchase-about-item-image" src="./images/placeholder.jpg">
+						<p class="propchase-about-item-text second-text"><b>Пожалуйста, имей ввиду, что игра находится на ранних стадиях разработки и может содержать множество багов, недоработок и иных неудобств.</b> Если ты обнаружил(-а) что-то такое, пиши в Discord-чат игры.
+						<br>Присоединяйся к официальному <a href="https://discord.gg/bpfCND8YTX" class="text-button btn-ripple">Discord-серверу</a> разработчика и будь в курсе событий!
+						</p>
+					</div>
+
+					<div class="panel propchase-about-item">
+						<img loading="lazy" class="propchase-about-item-image" src="./images/placeholder.jpg">
+						<p class="propchase-about-item-text second-text">В игре есть 2 стороны: прящущиеся и охотники. Первым нужно выжить до конца раунда, не дав себя поймать, а вторым - найти спрятавшихся игроков.
+							<br>У каждой стороны есть свои уникальные способности: у прячущихся это смена пропа и невидимость, а у охотников - поимка и подсказка.
+							<br>В раунде побеждают охотники, если они нашли всех игроков за отведённое время, а иначе - прячущиеся.
+						</p>
+					</div>
+
+					<div class="panel propchase-about-item">
+						<img loading="lazy" class="propchase-about-item-image" src="./images/placeholder.jpg">
+						<p class="propchase-about-item-text second-text">Играть можно только через матчмейкинг - со случайными игроками и на случайной карте. На данный момент в игре есть 2 карты на стадии прототипа: Ферма и Лес, для игры пока доступна только первая из них.
+						</p>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+
+		<div class="sub-main-container" id="licenses">
+			<div class="content">
+
+				<h3 class="content-title gray-gradient" data-translationid="55">ЛИЦЕНЗИИ И СОГЛАШЕНИЯ</h3>
+				<h6 class="content-text second-text" data-translationid="56">Авторские права и иные аспекты</h6>
+
+				<div class="propchase-license-items">
+
+					<div class="panel propchase-license-item">
+						<p class="propchase-license-item-text second-text">Game "Prop Chase" [including all in-game and related to the game content] - Copyright © 2025 EVERMEDIA PROJECT</p>
+						<a class="text-button btn-ripple" href="./license-agreement-and-game-rules">Лицензионное Соглашение и Правила Игры</a>
+						<a class="text-button btn-ripple" href="../">https://evermedia.immorrtalz.com</a>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+
+		<div class="footer panel">
+
+			<div class="footer-1">
+
+				<img loading="lazy" class="footer-logo" src="../images/logo.png">
+
+				<div class="footer-1-inner">
+
+					<div class="footer-1-inner-block">
+						<p class="footer-1-inner-block-title" data-translationid="27">LANGUAGE</p>
+						<a class="footer-1-inner-block-item second-text" onclick="changeTranslation(0)">English</a>
+						<a class="footer-1-inner-block-item second-text" onclick="changeTranslation(1)">Русский</a>
+					</div>
+
+					<div class="footer-1-inner-block">
+						<p class="footer-1-inner-block-title" data-translationid="28">LINKS</p>
+						<a class="footer-1-inner-block-item second-text" data-translationid="35">Privacy Policy</a>
+						<a class="footer-1-inner-block-item second-text" data-translationid="36">Terms & Conditions</a>
+						<a class="footer-1-inner-block-item second-text" href="../donate" data-translationid="50">❤️Поддержать⚡</a>
+					</div>
+
+					<div class="footer-1-inner-block">
+						<p class="footer-1-inner-block-title" data-translationid="30">SOCIALS</p>
+						<div class="footer-1-inner-block-rowcontainer">
+
+							<a class="footer-1-inner-block-rowcontainer-item" href="https://www.youtube.com/@evermedia-project" target="_blank">
+								<img loading="lazy" src="../images/socials/yt.png">
+								<img loading="lazy" src="../images/socials/yt.png">
+							</a>
+
+							<a class="footer-1-inner-block-rowcontainer-item" href="https://discord.gg/GbzYVdF" target="_blank">
+								<img loading="lazy" src="../images/socials/ds.png">
+								<img loading="lazy" src="../images/socials/ds.png">
+							</a>
+
+							<a class="footer-1-inner-block-rowcontainer-item" href="https://t.me/evermedia_project" target="_blank">
+								<img loading="lazy" src="../images/socials/tg.png">
+								<img loading="lazy" src="../images/socials/tg.png">
+							</a>
+
+							<a class="footer-1-inner-block-rowcontainer-item" href="https://vk.com/evermedia_project" target="_blank">
+								<img loading="lazy" src="../images/socials/vk.png">
+								<img loading="lazy" src="../images/socials/vk.png">
+							</a>
+
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="footer-2">
+				<p class="footer-2-copyright second-text">© 2019-<span id="currentyear"></span> EVERMEDIA PROJECT, <span data-translationid="34">all rights reserved</span></p>
+				<a class="footer-2-email" href="mailto:evereststudioproject@bk.ru">evereststudioproject@bk.ru</a>
+			</div>
+
+		</div>
+
+	</span>
+
+</body>
+
+<script
+	src="https://code.jquery.com/jquery-3.6.0.js"
+	integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+	crossorigin="anonymous">
+</script>
+
+<script src="../js/loadingscreen.js"></script>
+<script src="../js/cursor.js"></script>
+<script src="../js/texts.js"></script>
+<script src="../js/translation.js"></script>
+<script src="../js/ripple.js"></script>
+<script src="../js/tilt.jquery.js"></script>
+
+</html>

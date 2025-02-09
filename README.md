@@ -7,8 +7,3 @@
 [![Discord](https://img.shields.io/discord/600372807062519848?label=discord&color=slateblue)](https://discord.gg/GbzYVdF)
 
 Main site of EVERMEDIA PROJECT by [immorrtalz](https://github.com/immorrtalz)
-
----
-
-> [!TIP]
-> This repository includes immorrtalz' [profiles page](https://evermedia-project.ru/profiles)

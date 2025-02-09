@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>TriRun</title>
+
+	<link href="../css/general.css" rel="stylesheet" type="text/css">
+	<link href="../css/styles.css" rel="stylesheet" type="text/css">
+	<link href="./css/styles.css" rel="stylesheet" type="text/css">
+	<link href="./images/favicon.png" rel="icon">
+</head>
+
+<body>
+
+	<div class="cursor"></div>
+	<div class="cursor-glow"></div>
+	<span class="noise-overlay"></span>
+
+	<div class="loading">
+		<div class="loading-element absolute center-xy"></div>
+	</div>
+
+	<span class="page">
+
+		<div class="blobs">
+			<div class="blob1"></div>
+			<div class="blob2"></div>
+		</div>
+
+		<div class="top-header center-x panel">
+
+			<img loading="lazy" class="top-header-logo" src="../images/logo-sm.png" alt="EVERMEDIA PROJECT">
+
+			<a href="../" class="top-header-link" data-translationid="0">Home</a>
+			<a href="#about" class="top-header-link" data-translationid="51">Об игре</a>
+			<a href="../donate" class="top-header-link support-heart-beat">❤️</a>
+
+		</div>
+
+		<div class="main-container" id="home">
+			<div class="header absolute center-xy">
+
+				<a class="header-tip" href="../" data-translationid="52">by EVERMEDIA PROJECT</a>
+
+				<h1 class="header-title gray-gradient">TriRun</h1>
+
+				<h6 class="header-text" data-translationid="53">Покори космос в мобильном раннере для Android!</h6>
+
+				<a href="./TriRun.apk" download class="button trirun-sitedownload-button" data-translationid="54"><span class="button-blur"></span>Download</a>
+
+				<div class="trirun-buttons-container">
+					<a href="https://apps.rustore.ru/app/com.EVERESTSTUDIOProject.TriRun" class="trirun-download-button" target="_blank"><img loading="lazy" src="./images/download-badges/rustore.png"></a>
+					<a href="https://evermedia-project.itch.io/trirun" class="trirun-download-button" target="_blank"><img loading="lazy" src="./images/download-badges/itchio.png"></a>
+					<a href="https://gamejolt.com/games/trirun/715515" class="trirun-download-button" target="_blank"><img loading="lazy" src="./images/download-badges/gamejolt.png"></a>
+					<a href="https://trirun.ru.uptodown.com/android" class="trirun-download-button" target="_blank"><img loading="lazy" src="./images/download-badges/uptodown.png"></a>
+				</div>
+
+			</div>
+
+			<div class="header-arrows absolute center-x">
+				<span><img loading="lazy" class="header-arrow-1" src="../images/arrow.png"></span>
+				<span><img loading="lazy" class="header-arrow-2" src="../images/arrow.png"></span>
+				<span><img loading="lazy" class="header-arrow-3" src="../images/arrow.png"></span>
+			</div>
+
+		</div>
+
+		<div class="sub-main-container" id="about">
+			<div class="content">
+
+				<h3 class="content-title gray-gradient" data-translationid="57">ОБ ИГРЕ</h3>
+				<h6 class="content-text second-text" data-translationid="58">История создания, геймплей и прочее</h6>
+
+				<div class="trirun-about-items">
+
+					<div class="panel trirun-about-item">
+						<img loading="lazy" class="trirun-about-item-image" src="./images/card1.png">
+						<p class="trirun-about-item-text second-text" data-translationid="59">Разработка игры началась 23 января 2022 года, в тихий зимний вечер. К лету того же года было выпущено несколько альфа-сборок, появились первые тестеры.
+							<br><br>К концу года игра вышла в бету, и скорость разработки сильно увеличилась, всё больше внимания уделялось на комфортность процесса игры.
+							<br><br>В мае 2023 вышла последняя бета-версия, а 24 июня того же года состоялся релиз игры на четырёх площадках.</p>
+					</div>
+
+					<div class="panel trirun-about-item">
+						<img loading="lazy" class="trirun-about-item-image" src="./images/card2.png">
+						<p class="trirun-about-item-text second-text" data-translationid="60">Уклоняйся от врагов, набирай очки и собирай монеты на нарастающей скорости, чтобы улучшать бонусы и покупать новые корабли!
+							<br><br>Стань первым, кто покорит глубины космоса!
+							<br><br>Займи своё место в ТОП-10 рекордов по всему миру!</p>
+					</div>
+
+					<div class="panel trirun-about-item">
+						<img loading="lazy" class="trirun-about-item-image" src="./images/card3.png">
+						<p class="trirun-about-item-text second-text" data-translationid="61">В космосе тебе встретятся 5 типов врагов: Мина, Мина-Подрывник, Электро Аномалия, Гравитатор и Астероид.
+							<br><br>У каждого из них есть свои особенности, будь осторожен(-на)!
+							<br><br>Противостоять им помогут 5 разных бонусов: Щит, x2 Монеты, Хроно-варп, Магнит, Дизраптор и x2 Счёт - каждый со своей уникальной механикой!</p>
+					</div>
+
+					<div class="panel trirun-about-item">
+						<img loading="lazy" class="trirun-about-item-image" src="./images/card4.png">
+						<p class="trirun-about-item-text second-text" data-translationid="62">В игре есть системы лидерборда, кейсов, ежедневных наград и скинов, а если надоест Классический режим игры, есть ещё несколько, чтобы освежиться!
+							<br><br>Не нужно постоянно быть подключенным к Интернету: все сохранения дублируются в шифрованных оффлайн-файлах. Все данные из них выгружаются в облако при входе в игру онлайн.</p>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+
+		<div class="sub-main-container" id="licenses">
+			<div class="content">
+
+				<h3 class="content-title gray-gradient" data-translationid="55">ЛИЦЕНЗИИ И СОГЛАШЕНИЯ</h3>
+				<h6 class="content-text second-text" data-translationid="56">Авторские права и иные аспекты</h6>
+
+				<div class="trirun-license-items">
+
+					<div class="panel trirun-license-item">
+						<p class="trirun-license-item-text second-text">Game "TriRun" [including all in-game and related to the game content] - Copyright © 2023 EVERMEDIA PROJECT</p>
+						<a class="text-button btn-ripple" href="./license-agreement-and-game-rules">Лицензионное Соглашение и Правила Игры</a>
+						<a class="text-button btn-ripple" href="../">https://evermedia.immorrtalz.com</a>
+					</div>
+
+					<div class="panel trirun-license-item">
+						<p class="trirun-license-item-text second-text">OST "Exxion" - Copyright © 2023 EVERMEDIA PROJECT</p>
+						<a class="text-button btn-ripple" href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a>
+						<a class="text-button btn-ripple" href="https://youtu.be/DUezLjJm6no">https://youtu.be/DUezLjJm6no</a>
+					</div>
+
+					<div class="panel trirun-license-item">
+						<p class="trirun-license-item-text second-text">Font "Monitorica" - Copyright © 2014 Sergiy S. Tkachenko // Copyright © 2014 IPHostMonitor.com</p>
+						<a class="text-button btn-ripple" href="https://creativecommons.org/licenses/by-nd/4.0/">CC BY-ND 4.0</a>
+						<a class="text-button btn-ripple" href="https://www.iphostmonitor.com/monitorica-font.html">https://www.iphostmonitor.com/monitorica-font.html</a>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+
+		<div class="footer panel">
+
+			<div class="footer-1">
+
+				<img loading="lazy" class="footer-logo" src="../images/logo.png">
+
+				<div class="footer-1-inner">
+
+					<div class="footer-1-inner-block">
+						<p class="footer-1-inner-block-title" data-translationid="27">LANGUAGE</p>
+						<a class="footer-1-inner-block-item second-text" onclick="changeTranslation(0)">English</a>
+						<a class="footer-1-inner-block-item second-text" onclick="changeTranslation(1)">Русский</a>
+					</div>
+
+					<div class="footer-1-inner-block">
+						<p class="footer-1-inner-block-title" data-translationid="28">LINKS</p>
+						<a class="footer-1-inner-block-item second-text" data-translationid="35">Privacy Policy</a>
+						<a class="footer-1-inner-block-item second-text" data-translationid="36">Terms & Conditions</a>
+						<a class="footer-1-inner-block-item second-text" href="../donate" data-translationid="50">❤️Поддержать⚡</a>
+					</div>
+
+					<div class="footer-1-inner-block">
+						<p class="footer-1-inner-block-title" data-translationid="30">SOCIALS</p>
+						<div class="footer-1-inner-block-rowcontainer">
+
+							<a class="footer-1-inner-block-rowcontainer-item" href="https://www.youtube.com/@evermedia-project" target="_blank">
+								<img loading="lazy" src="../images/socials/yt.png">
+								<img loading="lazy" src="../images/socials/yt.png">
+							</a>
+
+							<a class="footer-1-inner-block-rowcontainer-item" href="https://discord.gg/GbzYVdF" target="_blank">
+								<img loading="lazy" src="../images/socials/ds.png">
+								<img loading="lazy" src="../images/socials/ds.png">
+							</a>
+
+							<a class="footer-1-inner-block-rowcontainer-item" href="https://t.me/evermedia_project" target="_blank">
+								<img loading="lazy" src="../images/socials/tg.png">
+								<img loading="lazy" src="../images/socials/tg.png">
+							</a>
+
+							<a class="footer-1-inner-block-rowcontainer-item" href="https://vk.com/evermedia_project" target="_blank">
+								<img loading="lazy" src="../images/socials/vk.png">
+								<img loading="lazy" src="../images/socials/vk.png">
+							</a>
+
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="footer-2">
+				<p class="footer-2-copyright second-text">© 2019-<span id="currentyear"></span> EVERMEDIA PROJECT, <span data-translationid="34">all rights reserved</span></p>
+				<a class="footer-2-email" href="mailto:evereststudioproject@bk.ru">evereststudioproject@bk.ru</a>
+			</div>
+
+		</div>
+
+	</span>
+
+</body>
+
+<script
+	src="https://code.jquery.com/jquery-3.6.0.js"
+	integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+	crossorigin="anonymous">
+</script>
+
+<script src="../js/loadingscreen.js"></script>
+<script src="../js/cursor.js"></script>
+<script src="../js/texts.js"></script>
+<script src="../js/translation.js"></script>
+<script src="../js/ripple.js"></script>
+<script src="../js/tilt.jquery.js"></script>
+
+</html>
