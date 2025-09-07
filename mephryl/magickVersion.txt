@@ -1,0 +1,1 @@
+ImageMagick 7.1.1-48 (Beta) Q8 x86_64 1e924cb78:20250412 https://imagemagick.org
